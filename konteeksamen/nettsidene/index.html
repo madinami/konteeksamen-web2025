@@ -9,14 +9,18 @@
     <link rel="stylesheet" href="/konteeksamen/ikoner/css/all.css">
     <title>Reise</title> 
 </head>
-<header id="global_header">
-    <h1 class="logo"><a href="/index.html"><img src="/konteeksamen/bilder/logo.png" alt="logo"></h1></a>
 
-    <section class="menyer">
-        <a href="/konteeksamen/nettsidene/order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-        <a href=""><i class="fa-regular fa-user"></i></a>
-        <a href=""><i class="fa-solid fa-bars"></i></a>
-    </section>
+<header id="global_header">
+    <h1 class="logo">
+        <a href="/index.html">
+            <img src="/konteeksamen/bilder/logo.png" alt="logo">
+        </a>
+    </h1>
+        <section class="menyer">
+            <a href="/konteeksamen/nettsidene/order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </section>
 
     <nav class="">
         <a href="#">tips og inspirasjon</a>
@@ -25,13 +29,59 @@
         <a href="#kontakt_footer">kontakt oss</a>
     </nav>
 
-</header>
-<body>
-
-    <section class="">
-        
+    <section class="bannerbilde">
+        <img src="/konteeksamen/bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
     </section>
     
+    <section class="bestille">
+        <form>
+            <label for="fra">Fra</label>
+            <select id="fra" name="fra">
+                <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                <option value="torp-lufthavn">Torp Lufthavn</option>
+                <option value="Bergen-lufthavn">Bergen Lufthavn</option>
+                <option value="alta-lufthavn">Alta Lufthavn</option>
+            </select>
+    
+            <label for="til">Til</label>
+            <select id="til" name="til">
+                <option value="albania">Albania</option>
+                <option value="danmark">Danmark</option>
+                <option value="finland">Finland</option>
+                <option value="hellas">Hellas</option>
+            </select>
+    
+            <label for="reiselengde">Reiselengde</label>
+            <select id="reiselengde" name="reiselengde">
+                <option value="mindre-en-uke">Mindre enn 1 uke</option>
+                <option value="1-uker">1 uke</option>
+                <option value="2-uker">2 uker</option>
+                <option value="mer-en-2-uker">Mer enn 2 uker</option>
+            </select>
+
+            <label for="dato">Velg dato</label>
+            <input type="date" id="dato" name="dato">
+
+            <label for="antall">Antall reisende</label>
+            <input type="number" id="antall" name="antall" min="1" value="1">
+
+            <button type="submit">Søk</button>
+        </form>
+    </section>
+</header>
+<main>
+    <section class="kampanjeseksjon">
+        <img src="/konteeksamen/bilder/landskap/bassengstrand.jpg" alt="bilde2">
+        <h3>Bestill sommerens beste uke</h3>
+        <p>Fly + hotell, 7 dager</p>
+        <strong>Fra 3 298,-</strong>
+        <button type="bestill_btn">Bestill i dag<a href="/konteeksamen/nettsidene/hotell.html"></button>
+    </section>
+
+</main>
+
+
+<body>
 
 
 
@@ -40,9 +90,7 @@
 
 
 
-
-
-
+    
 
 
 
