@@ -3,79 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/konteeksamen/css/css.style">
-    <link rel="stylesheet" href="/konteeksamen/ikoner/css/brands.css">
-    <link rel="stylesheet" href="/konteeksamen/ikoner/css/solid.css">
-    <link rel="stylesheet" href="/konteeksamen/ikoner/css/all.css">
-    <title>Reise</title> 
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../ikoner/css/brands.css">
+    <link rel="stylesheet" href="../ikoner/css/solid.css">
+    <link rel="stylesheet" href="../ikoner/css/all.css">
+    <title>Reise</title>
 </head>
-
-<header id="global_header">
-    <h1 class="logo">
-        <a href="/index.html">
-            <img src="/konteeksamen/bilder/logo.png" alt="logo">
-        </a>
-    </h1>
-        <section class="menyer">
-            <a href="/konteeksamen/nettsidene/order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href=""><i class="fa-regular fa-user"></i></a>
-            <a href=""><i class="fa-solid fa-bars"></i></a>
+<body>
+    <header id="global_header">
+        <section class="felles_topp">
+            <h1 class="logo">
+                <img src="../bilder/logo.png" alt="logo">
+                <a href="../nettsidene/index.html"></a>
+            </h1>
+            <section class="menyer">
+                <a href="../nettsidene/order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href=""><i class="fa-regular fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-bars"></i></a>
+            </section>
         </section>
 
-    <nav class="">
-        <a href="#">tips og inspirasjon</a>
-        <a href="/konteeksamen/nettsidene/hotell.html">Hotell</a>
-        <a href="https://www.norwegian.no" target="_blank"><i class="fa-solid fa-plane"></i>Fly</a>
-        <a href="#kontakt_footer">kontakt oss</a>
-    </nav>
+        <nav class="navigasjon">
+            <a href="../#tips"><i class="fa-solid fa-comment-medical"></i> tips og inspirasjon</a>
+            <a href="../nettsidene/hotell.html"><i class="fa-solid fa-hotel"></i> Hotell</a>
+            <a href="https://www.norwegian.no" target="_blank"><i class="fa-solid fa-plane"></i> Fly</a>
+            <a href="#kontakt_footer"><i class="fa-solid fa-mobile"></i> kontakt oss</a>
+            <i class="fa-solid fa-city"></i> Storby</a>
+            <i class="fa-solid fa-map"></i> Kombinasjoner</a>
+        </nav>
 
-    <section class="bannerbilde">
-        <img src="/konteeksamen/bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
-    </section>
-    
-    <section class="bestille">
-        <form>
-            <label for="fra">Fra</label>
-            <select id="fra" name="fra">
-                <option value="oslo-lufthavn">Oslo Lufthavn</option>
-                <option value="torp-lufthavn">Torp Lufthavn</option>
-                <option value="Bergen-lufthavn">Bergen Lufthavn</option>
-                <option value="alta-lufthavn">Alta Lufthavn</option>
-            </select>
-    
-            <label for="til">Til</label>
-            <select id="til" name="til">
-                <option value="albania">Albania</option>
-                <option value="danmark">Danmark</option>
-                <option value="finland">Finland</option>
-                <option value="hellas">Hellas</option>
-            </select>
-    
-            <label for="reiselengde">Reiselengde</label>
-            <select id="reiselengde" name="reiselengde">
-                <option value="mindre-en-uke">Mindre enn 1 uke</option>
-                <option value="1-uker">1 uke</option>
-                <option value="2-uker">2 uker</option>
-                <option value="mer-en-2-uker">Mer enn 2 uker</option>
-            </select>
 
-            <label for="dato">Velg dato</label>
-            <input type="date" id="dato" name="dato">
 
-            <label for="antall">Antall reisende</label>
-            <input type="number" id="antall" name="antall" min="1" value="1">
 
-            <button type="submit">Søk</button>
-        </form>
-    </section>
-</header>
+        <section class="bannerbilde">
+            <img src="../bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
+        </section>
+        
+        <section class="bestille">
+            <form>
+                <label for="fra">Fra</label>
+                <select id="fra" name="fra">
+                    <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                    <option value="torp-lufthavn">Torp Lufthavn</option>
+                    <option value="Bergen-lufthavn">Bergen Lufthavn</option>
+                    <option value="alta-lufthavn">Alta Lufthavn</option>
+                </select>
+
+                <label for="til">Til</label>
+                <select id="til" name="til">
+                    <option value="albania">Albania</option>
+                    <option value="danmark">Danmark</option>
+                    <option value="finland">Finland</option>
+                    <option value="hellas">Hellas</option>
+                </select>
+
+                <label for="reiselengde">Reiselengde</label>
+                <select id="reiselengde" name="reiselengde">
+                    <option value="mindre-en-uke">Mindre enn 1 uke</option>
+                    <option value="1-uker">1 uke</option>
+                    <option value="2-uker">2 uker</option>
+                    <option value="mer-en-2-uker">Mer enn 2 uker</option>
+                </select>
+
+                <label for="dato">Velg dato</label>
+                <input type="date" id="dato" name="dato">
+
+                <label for="antall">Antall reisende</label>
+                <input type="number" id="antall" name="antall" min="1" value="1">
+
+                <button type="submit">Søk</button>
+            </form>
+        </section>
+    </header>
+</body>
 <main>
     <section class="kampanjeseksjon">
-        <img src="/konteeksamen/bilder/landskap/bassengstrand.jpg" alt="bilde2">
+        <img src="../bilder/landskap/bassengstrand.jpg" alt="bilde2">
         <h3>Bestill sommerens beste uke</h3>
         <p>Fly + hotell, 7 dager</p>
         <strong>Fra 3 298,-</strong>
-        <button type="bestill_btn">Bestill i dag<a href="/konteeksamen/nettsidene/hotell.html"></button>
+        <button class="bestill_btn" onclick="location.href='../nettsidene/hotell.html';">Bestill i dag</button>
+
     </section>
 
     <section class="tilbudsseksjon">
@@ -96,7 +104,7 @@
     <section class="tips">
         <h2>Tips & inspirasjon</h2>
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Greske favoritter</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
             <a href="#" class="tips_i">Fra kr 3 970</a>
@@ -104,7 +112,7 @@
         </article>
 
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Bestill i dag!</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
             <a href="#" class="tips_i">Fra kr 3 270</a>
@@ -112,14 +120,14 @@
         </article>
 
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Ferie</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
             <a href="#" class="tips_i">Les mer</a>
         </article>
 
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Besøk London</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>        
             <a href="#" class="tips_i">Fra 3000 kr</a>
@@ -127,7 +135,7 @@
         </article>
 
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Skiferie</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
             <a href="#" class="tips_i">Se alle ski områdene</a>
@@ -135,7 +143,7 @@
         </article>
 
         <article>
-            <img src="/konteeksamen/bilder/landskap/utsikt.jpg" alt="bilde3">
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
             <h5>Spar opp til 1000Kr</h5>
             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
             <a href="#" class="tips_i">Les mer</a>
@@ -146,36 +154,24 @@
 </main>
 
 
-<body>
-
-
-
-
-
-
-
-
-
-
 
 
 <footer>
     <section class="flagg">
-        <img src="/konteeksamen/bilder/flagg/denmark.png" alt="Danmark"> <p>Danmark</p>
-        <img src="/konteeksamen/bilder/flagg/material.png" alt="Suomi"> <p>Suomi</p>
-        <img src="/konteeksamen/bilder/flagg/netherlands.png" alt="Nederland"> <p>Nederland</p>
-        <img src="/konteeksamen/bilder/flagg/norway.png" alt="Norge"> <p>Norge</p>
-        <img src="/konteeksamen/bilder/flagg/sweden.png" alt="Sverige"> <p>Sverige</p>
+        <img src="../bilder/flagg/denmark.png" alt="Danmark"> <p>Danmark</p>
+        <img src="../bilder/flagg/material.png" alt="Suomi"> <p>Suomi</p>
+        <img src="../bilder/flagg/netherlands.png" alt="Nederland"> <p>Nederland</p>
+        <img src="../bilder/flagg/norway.png" alt="Norge"> <p>Norge</p>
+        <img src="../bilder/flagg/sweden.png" alt="Sverige"> <p>Sverige</p>
     </section>
-
 
     <section class="betalning">
         <h4>Betalningsmetoder</h4>
-        <FontAwesomeIcon icon="fa-brands fa-cc-visa" />
-        <FontAwesomeIcon icon="fa-brands fa-cc-mastercard" />
-        <FontAwesomeIcon icon="fa-brands fa-cc-paypal" />
-        <FontAwesomeIcon icon="fa-brands fa-cc-apple-pay" />
-        <FontAwesomeIcon icon="fa-brands fa-cc-amazon-pay" />
+        <i class="fa-brands fa-cc-visa"></i>
+        <i class="fa-brands fa-cc-mastercard"></i>
+        <i class="fa-brands fa-cc-paypal"></i>
+        <i class="fa-brands fa-cc-apple-pay"></i>
+        <i class="fa-brands fa-cc-amazon-pay"></i>
     </section>
 
     <section class="nyhetstilbud">

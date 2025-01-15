@@ -1,5 +1,29 @@
 
 
-global_header{
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#global_header{
     background-color: aqua;
 }
+
+.felles_topp {
+    background-color: #fff;
+    border-bottom: 1px solid #ddd; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    display: flex;
+    height: auto;
+    width: 60px; 
+}
+
+.menyer, .logo {
+    font-size: 30px; 
+}
+
+
