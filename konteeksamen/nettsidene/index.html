@@ -33,14 +33,14 @@
         </nav>
 
 
-
-
+        <section class="banner">
         <section class="bannerbilde">
             <img src="../bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
         </section>
         
         <section class="bestille">
             <form>
+                <legend>Fra</legend>
                 <label for="fra">Fra</label>
                 <select id="fra" name="fra">
                     <option value="oslo-lufthavn">Oslo Lufthavn</option>
@@ -51,29 +51,36 @@
 
                 <label for="til">Til</label>
                 <select id="til" name="til">
+                    <legend>Til</legend>
                     <option value="albania">Albania</option>
                     <option value="danmark">Danmark</option>
                     <option value="finland">Finland</option>
                     <option value="hellas">Hellas</option>
                 </select>
 
-                <label for="reiselengde">Reiselengde</label>
-                <select id="reiselengde" name="reiselengde">
-                    <option value="mindre-en-uke">Mindre enn 1 uke</option>
-                    <option value="1-uker">1 uke</option>
-                    <option value="2-uker">2 uker</option>
-                    <option value="mer-en-2-uker">Mer enn 2 uker</option>
-                </select>
+                <section class="reisDato">
+                    <legend>Reislengde</legend>
+                    <label for="reiselengde">Reiselengde</label>
+                    <select id="reiselengde" name="reiselengde">
+                        <option value="mindre-en-uke">Mindre enn 1 uke</option>
+                        <option value="1-uker">1 uke</option>
+                        <option value="2-uker">2 uker</option>
+                        <option value="mer-en-2-uker">Mer enn 2 uker</option>
+                    </select>
 
-                <label for="dato">Velg dato</label>
-                <input type="date" id="dato" name="dato">
+                    <legend>Dato</legend>
+                    <label for="dato">Velg dato</label>
+                    <input type="date" id="dato" name="dato">
+                </section>
 
                 <label for="antall">Antall reisende</label>
+                <legend>Antall reisende</legend>
                 <input type="number" id="antall" name="antall" min="1" value="1">
 
                 <button type="submit">Søk</button>
             </form>
         </section>
+    </section>
     </header>
 </body>
 <main>

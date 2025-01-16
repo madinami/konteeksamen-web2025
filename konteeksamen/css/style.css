@@ -1,13 +1,6 @@
-
-
 body {
     font-family: 'Montserrat', sans-serif;
 }
-
-#global_header{
-    background-color: aqua;
-}
-
 .felles_topp {
     background-color: #fff;
     border-bottom: 1px solid #ddd; 
@@ -15,15 +8,148 @@ body {
     justify-content: space-between;
     align-items: center;
 }
-
 .logo img {
     display: flex;
     height: auto;
-    width: 60px; 
+    width: 70px; 
 }
-
 .menyer, .logo {
     font-size: 30px; 
 }
+.menyer a {   
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: #000;
+}
+.menyer a:hover {
+    color: #007bff;
+}
+
+
+
+
+.navigasjon {
+    background-color: #f8f9fa;
+}
+.navigasjon a {
+    color: #000;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+.navigasjon a:hover {
+    color: #ff00ff31;
+}
+.navigasjon {
+    display: flex;
+    gap: 15px;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    padding-bottom: 5px;
+    scrollbar-width: none; 
+}
+.navigasjon::-webkit-scrollbar {
+    display: none; 
+}
+.navigasjon a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap; 
+    padding: 10px;
+    flex-shrink: 0; 
+    font-size: 14px;
+    position: relative;
+}
+.bannerbilde img {
+    height: 300px;    
+    width: 100%;
+}
+.utfyllinsskjema label {
+    position: relative;
+    top: 25px;
+    left: 10px;    
+}
+.bestille{
+    position: relative;
+    top: -250px; 
+}
+.bestille {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;  
+}
+.bestille form {
+    display: flex;  
+    flex-direction: column;
+}
+.bestille label {
+    font-size: 14px;
+    font-weight: bold;
+    top: 10px; 
+}
+.bestille select,
+.bestille input {
+    border: 2px solid #ddd;
+    padding: 10px;
+    font-size: 14px;
+    display: flex;  
+    flex-direction: column;   
+}
+label[for="sook"] {
+    color: #4b272700;
+}
+.bestille button {
+    background-color: #fbc02d;
+    color: #000000;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+.bestille button:hover {
+    background-color: #f9a825;
+}
+.reisDato {
+    display: flex; 
+    gap: 10px; 
+    width: 100%; 
+}
+#reiselengde,
+#date {
+    flex: 1; 
+    box-sizing: border-box;
+    padding: 10px; 
+    width: calc(50% - 10px); 
+    flex-direction: column;
+    vertical-align: top; 
+}
+.reis{
+    display: flex;
+}
+label[for="dato"] {
+    position: relative;
+    top: -7px;
+    left: 40px;    
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
