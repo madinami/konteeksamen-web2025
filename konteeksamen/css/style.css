@@ -1,5 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 .felles_topp {
     background-color: #fff;
@@ -12,18 +14,23 @@ body {
     display: flex;
     height: auto;
     width: 70px; 
+    margin-left: 20px; 
 }
 .menyer, .logo {
     font-size: 30px; 
+   
 }
 .menyer a {   
     text-decoration: none;
+    padding-right: 10px;
     transition: color 0.3s ease;
     color: #000;
 }
 .menyer a:hover {
     color: #007bff;
 }
+
+
 
 
 
@@ -140,6 +147,63 @@ label[for="dato"] {
     top: -7px;
     left: 40px;    
 }
+
+
+
+
+
+
+
+
+
+.kampanje_info {
+    position: relative;
+    background-color: #00b4d8;
+    margin: 30px;
+    border-radius: 0px 30px;
+    padding: 60px;
+    text-align: left;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+
+.kampanjeseksjon strong {
+    position: relative;
+    display: block;
+    margin-bottom: 20px;
+}
+
+
+.kampanjeseksjon .bestill_btn {
+    background-color: #ffd60a;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.bestill_btn{
+    float: right;
+    margin-right: 50px;
+}
+
+.kampanjeseksjon .bestill_btn:hover {
+    background-color: #e3b800;
+    transition: background-color 0.3s ease;
+}
+
+
+
+
+
+
+
+
 
 
 

@@ -23,74 +23,79 @@
             </section>
         </section>
 
-        <nav class="navigasjon">
-            <a href="../#tips"><i class="fa-solid fa-comment-medical"></i> tips og inspirasjon</a>
-            <a href="../nettsidene/hotell.html"><i class="fa-solid fa-hotel"></i> Hotell</a>
-            <a href="https://www.norwegian.no" target="_blank"><i class="fa-solid fa-plane"></i> Fly</a>
-            <a href="#kontakt_footer"><i class="fa-solid fa-mobile"></i> kontakt oss</a>
-            <i class="fa-solid fa-city"></i> Storby</a>
-            <i class="fa-solid fa-map"></i> Kombinasjoner</a>
-        </nav>
+        
+      
 
 
         <section class="banner">
-        <section class="bannerbilde">
-            <img src="../bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
-        </section>
-        
-        <section class="bestille">
-            <form>
-                <legend>Fra</legend>
-                <label for="fra">Fra</label>
-                <select id="fra" name="fra">
-                    <option value="oslo-lufthavn">Oslo Lufthavn</option>
-                    <option value="torp-lufthavn">Torp Lufthavn</option>
-                    <option value="Bergen-lufthavn">Bergen Lufthavn</option>
-                    <option value="alta-lufthavn">Alta Lufthavn</option>
-                </select>
+            <section class="bannerbilde">
+                <img src="../bilder/landskap/stranda.jpg" alt="bakgrunnsbilde">
+            </section>
+            
+            <section class="bestille">
+                <nav class="navigasjon">
+                    <a href="../#tips"><i class="fa-solid fa-comment-medical"></i> tips og inspirasjon</a>
+                    <a href="../nettsidene/hotell.html"><i class="fa-solid fa-hotel"></i> Hotell</a>
+                    <a href="https://www.norwegian.no" target="_blank"><i class="fa-solid fa-plane"></i> Fly</a>
+                    <a href="#kontakt_footer"><i class="fa-solid fa-mobile"></i> kontakt oss</a>
+                    <i class="fa-solid fa-city"></i> Storby</a>
+                    <i class="fa-solid fa-map"></i> Kombinasjoner</a>
+                </nav>
 
-                <label for="til">Til</label>
-                <select id="til" name="til">
-                    <legend>Til</legend>
-                    <option value="albania">Albania</option>
-                    <option value="danmark">Danmark</option>
-                    <option value="finland">Finland</option>
-                    <option value="hellas">Hellas</option>
-                </select>
-
-                <section class="reisDato">
-                    <legend>Reislengde</legend>
-                    <label for="reiselengde">Reiselengde</label>
-                    <select id="reiselengde" name="reiselengde">
-                        <option value="mindre-en-uke">Mindre enn 1 uke</option>
-                        <option value="1-uker">1 uke</option>
-                        <option value="2-uker">2 uker</option>
-                        <option value="mer-en-2-uker">Mer enn 2 uker</option>
+                <form  class="utfyllinsskjema">
+                    <label for="fra">Fra</label>
+                    <select id="fra" name="fra">
+                        <option value="oslo-lufthavn">Oslo Lufthavn</option>
+                        <option value="torp-lufthavn">Torp Lufthavn</option>
+                        <option value="Bergen-lufthavn">Bergen Lufthavn</option>
+                        <option value="alta-lufthavn">Alta Lufthavn</option>
                     </select>
 
-                    <legend>Dato</legend>
-                    <label for="dato">Velg dato</label>
-                    <input type="date" id="dato" name="dato">
-                </section>
+                    <label for="til">Til</label>
+                    <select id="til" name="til">
+                        <option value="albania">Albania</option>
+                        <option value="danmark">Danmark</option>
+                        <option value="finland">Finland</option>
+                        <option value="hellas">Hellas</option>
+                    </select>
 
-                <label for="antall">Antall reisende</label>
-                <legend>Antall reisende</legend>
-                <input type="number" id="antall" name="antall" min="1" value="1">
 
-                <button type="submit">Søk</button>
-            </form>
+                    <label for="reiselengd">Reiselengde</label>
+ 
+
+                    <section class="reis">
+                        <select id="reiselengde" name="reiselengde">
+                            <option value="mindre-en-uke">Mindre enn 1 uke</option>
+                            <option value="1-uker">1 uke</option>
+                            <option value="2-uker">2 uker</option>
+                            <option value="mer-en-2-uker">Mer enn 2 uker</option>
+                        </select>
+                  
+                        
+                        <label for="dato">Dato</label>
+
+                        <input type="date" id="date" name="date">
+                    </section>
+
+                    <label for="antall">Antall reisende</label>
+                    <input type="number" id="antall" name="antall" min="1" value="1">
+
+                    <label for="sook">.</label>
+                    <button class="sook_knapp" type="sook_knapp">Søk</button>
+                </form>
+            </section>
         </section>
-    </section>
     </header>
 </body>
 <main>
     <section class="kampanjeseksjon">
         <img src="../bilder/landskap/bassengstrand.jpg" alt="bilde2">
-        <h3>Bestill sommerens beste uke</h3>
-        <p>Fly + hotell, 7 dager</p>
-        <strong>Fra 3 298,-</strong>
+        <section class="kampanje_info">
+            <h2>Bestill sommerens beste uke</h2>
+            <p>Fly + hotell, 7 dager</p>
+            <strong>Fra 3 298,-</strong>
+        </section> 
         <button class="bestill_btn" onclick="location.href='../nettsidene/hotell.html';">Bestill i dag</button>
-
     </section>
 
     <section class="tilbudsseksjon">
