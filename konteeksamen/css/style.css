@@ -243,7 +243,6 @@ label[for="dato"] {
     position: relative;
     margin-top: -250px;
 }
-
 .tilbudsseksjon::-webkit-scrollbar {
     height: 5px;
 }
@@ -298,7 +297,6 @@ label[for="dato"] {
 }
 .tips article {
     display: inline-block;
-    vertical-align: top;
     margin: 10px;
     background-color: #f8f9fa;
     border-radius: 10px;
@@ -324,13 +322,25 @@ label[for="dato"] {
 .tips article .tips_i:hover {
     text-decoration: underline;
 }
-.tips article .ukens_deal,
-.tips article .ukens_nyhet {
+.tips article .ukens_deal {
+    position: absolute; 
     color: rgb(255, 255, 255);
     font-weight: bold;
     font-size: 15px;
     border-radius: 10px 0px 20px;
     width: 90px;
+    top: -15px;
+    background-color: #3d9dc9; 
+}
+.tips article .ukens_nyhet{
+    position: absolute; 
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px 0px 20px;
+    width: 90px;
+    margin-top: 20px;
+    background-color: #3d9dc9; 
 }
 .ukens_deal{
     background-color: #3d9dc9;
@@ -340,6 +350,13 @@ label[for="dato"] {
     background-color: #3d9dc9;
     padding: 15px;
     max-width: 45px;
+}
+.tips_ukens_deal {
+    position: relative; 
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden; 
 }
 
 
@@ -363,10 +380,15 @@ footer{
 
 .flagg p{
     font-size: 15px;
+    vertical-align: text-bottom;
 }
 
 .flagg img{
     width: 40px;
+}
+
+.flagg{
+    display: ruby;
 }
 
 
