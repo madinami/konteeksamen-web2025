@@ -35,6 +35,9 @@ body {
 
 
 
+
+
+
 .navigasjon {
     background-color: #f8f9fa;
 }
@@ -154,48 +157,141 @@ label[for="dato"] {
 
 
 
+.kampanjeseksjon img {
+    width: 100%;
+    border-radius: 20px;
+    margin-top: -220px;
+}
 
+.kampanjeseksjon h3 {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.kampanjeseksjon strong {
+    color: #000000;
+    font-size: 20px;
+}
+
+.kampanjeseksjon img {
+    min-height: 500px;
+}
+.kampanje_info{
+    height: 300px;    
+    box-sizing: border-box;
+}
 
 .kampanje_info {
     position: relative;
     background-color: #00b4d8;
-    margin: 30px;
     border-radius: 0px 30px;
     padding: 60px;
     text-align: left;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    overflow: hidden;
 }
 
+.kampanje_info, .bestill_btn{
 
-.kampanjeseksjon strong {
-    position: relative;
-    display: block;
-    margin-bottom: 20px;
+    top: -500px;
+    margin: 70px;
+    margin-top: 50px;    
 }
 
-
-.kampanjeseksjon .bestill_btn {
+.bestill_btn {
+    margin: -10px;
     background-color: #ffd60a;
     color: #000;
     font-size: 16px;
     font-weight: bold;
     border: none;
-    padding: 10px 20px;
+    margin-top: -50px;
+    padding: 20px 20px;
     border-radius: 5px;
     cursor: pointer;
     position: relative;
 }
-
 .bestill_btn{
-    float: right;
-    margin-right: 50px;
+    float: right; 
+    margin-right: 70px;
 }
-
-.kampanjeseksjon .bestill_btn:hover {
+.bestill_btn:hover {
     background-color: #e3b800;
     transition: background-color 0.3s ease;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+/* Offers section */
+.tilbudsseksjon {
+    text-align-last: start;
+    display: flex;
+    flex-direction: row; /* Elementer på én rad */
+    gap: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow-x: auto; /* Aktiverer horisontal scrolling */
+    scroll-behavior: smooth; /* Jevn scrolling */
+    position: relative;
+    margin-top: -250px;
+}
+
+.tilbudsseksjon::-webkit-scrollbar {
+    height: 5px; /* Høyde på den horisontale scrollbaren */
+}
+.tilbudsseksjon::-webkit-scrollbar-thumb {
+    background: #cccccc; /* Farge på scroll-indikatoren */
+    border-radius: 10px;
+}
+.tilbudsseksjon::-webkit-scrollbar-thumb:hover {
+    background: #999999; /* Farge når man holder musen over scroll-indikatoren */
+}
+.tilbudsseksjon article {
+    flex: 0 0 auto; /* Elementene skal ikke krympe eller vokse */
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  
+}
+.tilbudsseksjon h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+.tilbudsseksjon p{
+    color: #48c2ca;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
