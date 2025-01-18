@@ -230,33 +230,32 @@ label[for="dato"] {
 
 
 
-/* Offers section */
 .tilbudsseksjon {
     text-align-last: start;
     display: flex;
-    flex-direction: row; /* Elementer på én rad */
+    flex-direction: row;
     gap: 20px;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
-    overflow-x: auto; /* Aktiverer horisontal scrolling */
-    scroll-behavior: smooth; /* Jevn scrolling */
+    overflow-x: auto; 
+    scroll-behavior: smooth; 
     position: relative;
     margin-top: -250px;
 }
 
 .tilbudsseksjon::-webkit-scrollbar {
-    height: 5px; /* Høyde på den horisontale scrollbaren */
+    height: 5px;
 }
 .tilbudsseksjon::-webkit-scrollbar-thumb {
-    background: #cccccc; /* Farge på scroll-indikatoren */
+    background: #cccccc;
     border-radius: 10px;
 }
 .tilbudsseksjon::-webkit-scrollbar-thumb:hover {
-    background: #999999; /* Farge når man holder musen over scroll-indikatoren */
+    background: #999999; 
 }
 .tilbudsseksjon article {
-    flex: 0 0 auto; /* Elementene skal ikke krympe eller vokse */
+    flex: 0 0 auto; 
     background-color: #f8f9fa;
     border-radius: 10px;
     padding: 40px;
@@ -286,8 +285,100 @@ label[for="dato"] {
 
 
 
+.tips {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 1000px;
+}
+.tips h2 {
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.tips article {
+    display: inline-block;
+    vertical-align: top;
+    margin: 10px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.tips article img {
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+.tips article h5 {
+    font-size: 14px;
+    margin: 10px 0;
+}
+.tips article p {
+    font-size: 12px;
+    color: #555;
+}
+.tips article .tips_i {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+.tips article .tips_i:hover {
+    text-decoration: underline;
+}
+.tips article .ukens_deal,
+.tips article .ukens_nyhet {
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px 0px 20px;
+    width: 90px;
+}
+.ukens_deal{
+    background-color: #3d9dc9;
+    padding: 15px;
+}
+.ukens_nyhet{
+    background-color: #3d9dc9;
+    padding: 15px;
+    max-width: 45px;
+}
 
 
+
+
+
+
+
+
+
+
+
+
+footer{ 
+    background-color: #000000;
+    color: white;
+    padding: 40px;   
+}
+
+
+
+.flagg p{
+    font-size: 15px;
+}
+
+.flagg img{
+    width: 40px;
+}
+
+
+
+
+
+
+
+
+.betalning{
+    font-size: 18px;
+}
 
 
 
