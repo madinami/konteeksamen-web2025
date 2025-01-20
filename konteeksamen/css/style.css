@@ -481,25 +481,36 @@ footer{
     padding-top: 40px;
     padding-bottom: 40px;
 }
-
 .kontakt_info {
     color: #ffffff;
     padding-top: 5px;
-
 }
-
-
 .kontakt_info p, .kontakt_info a{
+    color: white;
+    text-decoration: none;
     margin: 5px;
     font-size: 14px;
     margin-left: -1px;
-    color: white;
-    text-decoration: none;
 }
-
 .sosiale_ikoner {
     font-size: 30px;
 }
+.sosiale_ikoner a {
+    color: white; 
+}
+.sosiale_ikoner {
+    display: flex; 
+    gap: 25px; 
+}
+.sosiale_footer h4 {
+    font-size: 18px; 
+    margin-bottom: 20px; 
+}
+.sosiale_ikoner a:hover {
+    color: #cccccc60; 
+    transition: color 0.3s ease;
+}
+
 
 
 
