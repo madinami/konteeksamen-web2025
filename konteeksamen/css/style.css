@@ -230,6 +230,7 @@ label[for="dato"] {
 
 
 
+
 .tilbudsseksjon {
     text-align-last: start;
     display: flex;
@@ -371,24 +372,41 @@ label[for="dato"] {
 
 
 footer{ 
-    background-color: #000000;
+    background-color: #000000ec;
     color: white;
     padding: 40px;   
 }
 
 
-
-.flagg p{
-    font-size: 15px;
-    vertical-align: text-bottom;
-}
-
 .flagg img{
     width: 40px;
 }
 
+.flagg {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 20px; 
+    width: 100px;
+    justify-self: center;
+} 
 .flagg{
-    display: ruby;
+    justify-self: center;
+    
+}
+
+
+
+
+
+
+.betalnings_kort {
+    display: flex; 
+    gap: 15px; 
+    flex-wrap: wrap; 
+    padding-bottom: 40px;
+}
+.betalnings_kort i {
+    font-size: 32px; 
 }
 
 
@@ -397,9 +415,59 @@ footer{
 
 
 
-
-.betalning{
+.nyhetstilbud_input {
+    display: block;
+    background-color: #0000008c; 
+    color: #ffffff; 
+    padding: 20px; 
+    text-align: left;
+    border: 2px solid #ffffff; 
+    margin: 2px; 
+    max-width: 400px;
+    min-width: 300px; 
+    margin-right: -20px;
+    /* height: 100px; /**/
+}
+.nyhetstilbud h4 {
+    padding-bottom: 20px;
     font-size: 18px;
+    font-weight: bold; 
+    margin-bottom: 10px;   
+    
+    
+}
+.nyhetstilbud h5 {
+    position: absolute;
+    margin-top: -32px;
+    background-color:  #000000e5;
+    font-size: 18px;
+    padding: 2px;
+    
+}
+.nyhetstilbud input{
+    height: 30px;
+    border-radius: 7px;
+    padding: 5px;
+    width: 320px;     
+}   
+.nyhetstilbud .search-btn {
+    margin-left: 10px;
+    background-color: #f1c900f6;
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+}
+.nyhetstilbud .search-btn:hover {
+    background-color: #a79130;
+    transition: background-color 0.3s ease;
+}
+.nyhestilbud_input_knapp {
+    display: flex;
 }
 
 
@@ -409,11 +477,29 @@ footer{
 
 
 
+.kontakt_footer {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.kontakt_info {
+    color: #ffffff;
+    padding-top: 5px;
+
+}
 
 
+.kontakt_info p, .kontakt_info a{
+    margin: 5px;
+    font-size: 14px;
+    margin-left: -1px;
+    color: white;
+    text-decoration: none;
+}
 
-
-
+.sosiale_ikoner {
+    font-size: 30px;
+}
 
 
 
