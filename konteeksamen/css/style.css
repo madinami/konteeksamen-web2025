@@ -375,22 +375,6 @@ footer{
     background-color: #000000ec;
     color: white;
     padding: 40px;   
-}
-
-
-.flagg img{
-    width: 40px;
-}
-
-.flagg {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    gap: 20px; 
-    width: 100px;
-    justify-self: center;
-} 
-.flagg{
-    justify-self: center;
     
 }
 
@@ -398,6 +382,87 @@ footer{
 
 
 
+
+.flagg {
+    flex-direction: column;
+    display: flex;
+    padding: 20px; /* Polstring rundt */
+    display: inline-block; /* Plasser teksten ved siden av flagget */
+}
+
+.sdns {
+    grid-template-columns: repeat(2, 1fr); /* To kolonner for hovedseksjonen */
+}
+
+.sdns img {
+    width: 40px; /* Størrelse på flaggene */
+    height: auto; /* Bevarer proporsjonene */
+    display: inline-block;
+    vertical-align: middle; /* Juster flaggene med teksten */
+}
+
+.sdns p {
+    display: inline-block; /* Plasser teksten ved siden av flagget */
+    margin: 0; /* Fjern standard marg */
+    font-size: 14px; /* Juster skriftstørrelsen */
+    line-height: 40px; /* Juster linjehøyde med flagget */
+    
+}
+
+.n {
+    grid-template-columns: repeat(2, 1fr); /* To kolonner for hovedseksjonen */
+    width: 40px; /* Størrelse på flagget */
+    height: auto;     
+}
+
+.flagg p:last-of-type {
+    font-size: 14px;
+    
+    display: inline-block; /* Plasser teksten ved siden av flagget */
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+.flagg {
+    display: grid;
+    justify-items: center;
+    padding: 20px; 
+}
+
+.flagg img {
+
+    height: auto; 
+}
+
+.flagg p {
+    margin: 0; 
+    font-size: 14px; 
+}
+
+*/
+
+
+
+
+
+
+.betalning{
+    padding-top: 40px;
+}
 
 .betalnings_kort {
     display: flex; 
@@ -408,7 +473,6 @@ footer{
 .betalnings_kort i {
     font-size: 32px; 
 }
-
 
 
 
@@ -429,12 +493,11 @@ footer{
     /* height: 100px; /**/
 }
 .nyhetstilbud h4 {
+    padding-top: 20px;
     padding-bottom: 20px;
     font-size: 18px;
     font-weight: bold; 
     margin-bottom: 10px;   
-    
-    
 }
 .nyhetstilbud h5 {
     position: absolute;
@@ -442,7 +505,6 @@ footer{
     background-color:  #000000e5;
     font-size: 18px;
     padding: 2px;
-    
 }
 .nyhetstilbud input{
     height: 30px;
@@ -476,7 +538,6 @@ footer{
 
 
 
-
 .kontakt_footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -492,6 +553,17 @@ footer{
     font-size: 14px;
     margin-left: -1px;
 }
+
+
+
+
+
+
+
+
+
+
+
 .sosiale_ikoner {
     font-size: 30px;
 }
@@ -518,6 +590,177 @@ footer{
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Hotell siden*/ 
+.hotell_bilder img{
+    width: 100%;
+    height: 100%;
+    position: relative; 
+    box-sizing: border-box; 
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+    gap: 20px; 
+}
+
+.hotell_bilder {
+    display: -webkit-inline-box;
+}
+.hotell_bilder > article {
+    flex: 0 0 auto; 
+    scroll-snap-align: start; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.hotell_bilder {
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory; 
+}
+
+
+
+
+
+
+
+
+
+nav {
+    display: flex; 
+    align-items: center; 
+    gap: 30px; 
+    border-bottom: 2px solid #ccc; 
+    padding: 20px 0; 
+}
+nav a {
+    text-decoration: none; 
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+    position: relative; 
+}
+nav a:hover {
+    color: #00b4d8; 
+}
+nav a.active {
+    color: #00b4d8; 
+}
+nav a.active::after {
+    position: absolute;
+    bottom: -5px; 
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #00b4d8; 
+}
+
+
+
+
+
+
+.hoveddel_hotell {
+    margin: 20px;
+}
+.hotell_vurdering {
+    font-family: Arial, sans-serif;
+    margin-bottom: 20px; 
+}
+.hotell_vurdering h2 {
+    padding-top: 80px;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0;
+    padding-bottom: 5px;
+}
+.vurdering {
+    color: #fbc02d; 
+    font-size: 18px;
+    display: block;
+    margin-top: 5px;
+}
+.tall_vurdering {
+    background-color: #6ddf6d; 
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    padding: 3px; 
+    display: inline-block; 
+    margin-right: 10px; 
+    font-size: 16px;
+}
+.hotell_vurdering span {
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    display: inline-block;
+    vertical-align: middle;
+}
+.hotell_vurdering a {
+    font-size: 14px;
+    color: #35b8a6;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+.hotell_vurdering a:hover {
+    text-decoration: underline;
+}
+.fasiliteter {
+    font-family: Arial, sans-serif;
+    margin-top: 30px;
+}
+.fasiliteter h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.fasiliteter p {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.fasiliteter_ikoner {
+    display: grid;
+    margin-left: 15px;
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 15px; 
+    margin-bottom: 20px; 
+}
+.fasiliteter_ikoner i {
+    font-size: 16px;
+    color: #333;
+    display: flex;
+    align-items: center;
+    gap: 8px; 
+}
+.fasiliteter a {
+    font-size: 14px;
+    color: #007bff;
+    text-decoration: none;
+    display: inline-block;
+}
+.fasiliteter a:hover {
+    text-decoration: underline;
+}
 
 
 
