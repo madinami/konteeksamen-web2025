@@ -703,7 +703,6 @@ nav a.active::after {
     font-weight: bold;
     padding: 3px; 
     display: inline-block; 
-    margin-right: 10px; 
     font-size: 16px;
 }
 .hotell_vurdering span {
@@ -713,19 +712,12 @@ nav a.active::after {
     display: inline-block;
     vertical-align: middle;
 }
-.hotell_vurdering a {
-    font-size: 14px;
-    color: #35b8a6;
-    text-decoration: none;
-    margin-top: 10px;
-    display: inline-block;
-}
 .hotell_vurdering a:hover {
     text-decoration: underline;
 }
 .fasiliteter {
     font-family: Arial, sans-serif;
-    margin-top: 30px;
+    margin-top: 70px;
 }
 .fasiliteter h2 {
     font-size: 22px;
@@ -761,6 +753,86 @@ nav a.active::after {
 .fasiliteter a:hover {
     text-decoration: underline;
 }
+
+
+
+
+
+
+
+
+
+.rom_valg {
+    margin: 15px;
+}
+.rom_valg h2{
+    margin-bottom: 1px;
+}
+.rom_valg img{
+    width: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.rom_kort {
+    padding: 0px;
+    border: 1px solid #ccc;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.rom_kort h3 {
+    font-size: 20px; 
+    font-weight: bold; 
+}
+.rom_kort ul {
+    padding: 0; 
+    font-size: 14px; 
+    color: #555; 
+}
+.rom_kort li {
+    padding: 0; 
+    margin-bottom: 10px;
+    font-size: 14px; 
+    color: #555; 
+}
+.første_listepunkt{
+    list-style: none;
+}
+.andre_listepunkt{
+    
+}
+.rom_info {
+    font-size: 14px;
+}
+.rom_all_info {
+    padding: 20px;
+}
+#score {
+    background-color: #6ddf6d; 
+    color: #fff; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    font-weight: bold;
+}
+.prisinfo-list strong {
+    font-size: 20px; 
+    color: #000; 
+    font-weight: bold;
+}
+
+
+
+
+
 
 
 
