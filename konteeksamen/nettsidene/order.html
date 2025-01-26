@@ -5,12 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
+
+
+
+
+
+
+<header>
+<nav class="navigasjon">
+    <a href="">Søk</a>
+    <a href="">Søkeresultater</a>
+    <a href="">Rom</a>
+    <a href="https://www.norwegian.no" target="_blank">Fly</a>
+    <a href="">Tillegg</a>
+    <a href="">OPPLYSNINGER</a>
+    <a href="">Bestill</a>
+</nav>
+<a href="https://www.norwegian.no" target="_blank">Dine valg</a>
+
+
+</header>
 <body>
     <main>
-        
+        <section class="bestillingsopplysninger">
+            <h2>Oppgi dine bestillingsopplysninger</h2>
+            <section class="bestillingsskjema1">
+                <form>
+                    <h5>VOKSEN 18+ HOVEDBESTILLER</h5>
+                    <label>FORNAVN (IFØLGE PASS):</label>
+                        <input type="name" id="name" class="inputfeltene">
+                    <label>ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="name" id="name" class="inputfeltene">
+                    <label class="bursdag">FØDSELSDATO:</label>
+                    <section>
+                        <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required>
+                        <input type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
+                        <input type="number" id="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
+                    </section>
+                    <label>KJØNN:</label>
+                        <label for="male">Mann</label>
+                            <input type="radio" id="male" name="gender" value="male" checked>
+                        <label for="female">Kvinne</label>
+                            <input type="radio" id="female" name="gender" value="female">
+                </section>
+                <section class="leveranseplass">
+                    <label for="email">E-post
+                        <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
+                    </label>
+                    <label for="tel">Telefon
+                        <input type="tel" name="tel" id="tel" minlength="8">
+                    </label>
+                    <label for="street">Gateadresse
+                        <input type="text" name="street" id="street">
+                    </label>
+                    <label for="postal-code">Postnummer
+                        <input type="text" name="postal-code" id="postal-code" minlength="4" maxlength="4" pattern="\d{4}">
+                    </label>
+                    <label for="city">Poststed
+                        <input type="text" name="city" id="city">
+                    </label>
+                    <label for="country">Land
+                        <select name="country" id="country">
+                            <option value="">Velg land</option>
+                            <option value="norway">Norge</option>
+                            <option value="sweden">Sverige</option>
+                            <option value="denmark">Danmark</option>
+                            <option value="finland">Finland</option>
+                            <option value="iceland">Island</option>
+                        </select>
+                    </label>
+                </form>
+            </section>
+            <form>
+                <section class="bestillingsskjema2">
+                    <form>
+                        <h5>VOKSEN 18+</h5>
+                        <label>FORNAVN (IFØLGE PASS):</label>
+                            <input type="name" id="name" class="inputfeltene">
+                        <label>ETTERNAVN (IFØLGE PASS):</label>
+                            <input type="name" id="name" class="inputfeltene">
+                        <label class="bursdag">FØDSELSDATO:</label>
+                        <section>
+                            <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required>
+                            <input type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
+                            <input type="number" id="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
+                        </section>
+                        <label>KJØNN:</label>
+                            <label for="male">Mann</label>
+                                <input type="radio" id="male" name="gender" value="male" checked>
+                            <label for="female">Kvinne</label>
+                                <input type="radio" id="female" name="gender" value="female">
+                    </section>
+            </form>
+            <button class="siste_trinn" type="button">Siste Trinn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
+        </section>
     </main>
-
-
-    
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -763,7 +763,7 @@ nav a.active::after {
 
 
 .rom_valg {
-    margin: 15px;
+    margin: 20px;
 }
 .rom_valg h2{
     margin-bottom: 1px;
@@ -774,17 +774,9 @@ nav a.active::after {
 }
 
 
-
-
-
-
-
-
-
-
-
 .rom_kort {
     padding: 0px;
+    margin-bottom: 40px;
     border: 1px solid #ccc;
     border-radius: 10px; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -804,11 +796,15 @@ nav a.active::after {
     font-size: 14px; 
     color: #555; 
 }
+.rom_liste{
+    display: flex;
+}
 .første_listepunkt{
     list-style: none;
 }
 .andre_listepunkt{
-    
+    margin-left: 5px;
+    list-style: none;   
 }
 .rom_info {
     font-size: 14px;
@@ -828,6 +824,70 @@ nav a.active::after {
     color: #000; 
     font-weight: bold;
 }
+
+
+
+
+
+
+
+
+
+
+
+.velg_rom {
+    margin: 20px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px 30px 0px 0px; 
+    padding: 20px; 
+    margin-bottom: 0px; 
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: white;
+    bottom: 0; 
+    justify-content: space-between; 
+    width: 82%;
+}
+.velg_rom.fixed {
+    position: fixed; 
+    bottom: 0; 
+    left: 0; 
+    width: 100%; 
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+
+
+
+.velg_rom_info h2 {
+    font-size: 22px; 
+    margin: 0;
+    font-weight: bold;
+}
+.velg_rom_info p {
+    font-size: 14px; 
+    color: #555; 
+    margin: 5px 0 0 0; 
+}
+.velg_rom .velg_btn {
+    background-color: #54b6c7; 
+    border-radius: 15px; 
+    color: white; 
+    border: none; 
+    padding: 8px 15px; 
+    font-size: 14px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+.velg_rom .velg_btn:hover {
+    background-color: #469ba7; 
+}
+
+
+
+
 
 
 
