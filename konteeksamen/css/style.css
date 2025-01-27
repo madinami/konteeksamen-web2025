@@ -898,3 +898,190 @@ nav a.active::after {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Order siden*/
+.navigasjon_order {
+    background-color: #3a96b3;
+    color: white;
+    height: 50px;
+    width: 100%; 
+    overflow-x: auto; 
+    overflow-y: hidden; 
+    border-radius: 0px 0px 12px 12px;
+    white-space: nowrap; 
+    box-sizing: border-box; 
+    margin-bottom: 0px;
+    padding: 20px;
+    gap: 25px;
+}
+
+
+.navigasjon_order {
+    overflow: scroll; 
+    -ms-overflow-style: none; 
+    scrollbar-width: none; 
+}
+.navigasjon_order::-webkit-scrollbar {
+    display: none;
+}
+.navigasjon_order p {
+    font-size: 38px;
+    margin: 0;    
+
+}
+.navigasjon_order a {
+    color: white;
+    text-decoration: none; 
+    
+}
+.navigasjon_order a:hover {
+    text-decoration: underline; /
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.sol {
+    color: rgb(248, 207, 26);
+    font-size: 20px;
+    margin: -5px;
+}
+
+
+
+
+
+
+
+
+.dine_valg h4{
+    margin-top: 0px;
+    justify-content: center; /* Sentrer horisontalt */
+    align-items: center; /* Sentrer vertikalt */
+
+}
+
+
+.dine_valg {
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    
+}
+
+/* Label styling (header with toggle functionality) */
+.toggle-label {
+    align-items: center;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.toggle-label i {
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+/* Hidden checkbox */
+.toggle-checkbox {
+    display: none;
+    
+}
+
+/* Hidden section by default */
+.dine_valg {
+    display: flex:
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+
+.ikoner_order {
+    margin-left: -7px;
+    
+}
+
+
+/* Show section when checkbox is checked */
+.toggle-checkbox:checked ~ .dine_valg {
+    display: block;
+}
+
+/* Rotate arrow icon when section is open */
+.toggle-checkbox:checked + .toggle-label i {
+    transform: rotate(90deg);
+}
+
+
+.dine_valg img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.info_omhotell {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;   
+}
+
+.info_omhotell i {
+    margin-right: 8px;
+}
+
+.klussa_over {
+    border-top-style: outset;
+    margin-top: 30px;
+    font-size: 14px;
+    color: #aaa;
+    text-decoration: line-through;
+}
+
+.red_farge {
+    margin-top: -10px;
+    font-size: 18px;
+    color: #e63946;
+}
+
+
+
+
+

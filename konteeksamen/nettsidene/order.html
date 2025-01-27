@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../ikoner/css/brands.css">
+    <link rel="stylesheet" href="../ikoner/css/solid.css">
+    <link rel="stylesheet" href="../ikoner/css/all.css">
+    <title>Reise</title>
 </head>
 
 
@@ -11,44 +15,76 @@
 
 
 
-
 <header>
-<nav class="navigasjon">
-    <a href="">Søk</a>
-    <a href="">Søkeresultater</a>
-    <a href="">Rom</a>
-    <a href="https://www.norwegian.no" target="_blank">Fly</a>
-    <a href="">Tillegg</a>
-    <a href="">OPPLYSNINGER</a>
-    <a href="">Bestill</a>
-</nav>
-<a href="https://www.norwegian.no" target="_blank">Dine valg</a>
-
-
+    <nav class="navigasjon_order">
+        <a href="">Søk</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="">Søkeresultater</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="">Rom</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="https://www.norwegian.no" target="_blank">Fly</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="">Tillegg</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="">OPPLYSNINGER</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+        <a href="">Bestill</a>
+        <p><i class="fa-solid fa-chevron-right"></i></p>
+    </nav>
 </header>
 <body>
+    <section class="dine_valg">
+        <input type="checkbox" id="toggle" class="toggle-checkbox" hidden>
+        <label for="toggle" class="toggle-label">
+        <h4>Dine valg <i class="fa-solid fa-chevron-right"></i></h4>
+        <img src="../bilder/landskap/basseng.jpg" alt="Bilde">
+            <section class="info_omhotell">
+                <h5>Hokus Pokus Diplodocus</h5>
+                <section class="sol">
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-solid fa-sun"></i>
+                    <i class="fa-regular fa-sun"></i>
+                </section>
+                <section class="ikoner_order">
+                    <p><i class="fa-solid fa-location-dot"></i> Hellas, Parga</p>
+                    <p><i class="fa-solid fa-calendar-days"></i> Man 15 mai - man 27 mai 2025</p>
+                    <p><i class="fa-regular fa-user"></i> 4 voksne</p>
+                    <p><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</p>
+                    <p><i class="fa-solid fa-utensils"></i> Frokostbuffë</p>
+                    <p><i class="fa-solid fa-plane"></i>Oslo Lufthavn - Preveza</i></p>
+                </section>
+            </section>
+            <section class="ny_gammel_pris">
+                <p class="klussa_over">22 003,-</p>
+                <p class="red_farge">19 803,-</p>
+            </section>
+    </section>
     <main>
         <section class="bestillingsopplysninger">
             <h2>Oppgi dine bestillingsopplysninger</h2>
             <section class="bestillingsskjema1">
                 <form>
                     <h5>VOKSEN 18+ HOVEDBESTILLER</h5>
+                    <section class="info_order_person">
                     <label>FORNAVN (IFØLGE PASS):</label>
                         <input type="name" id="name" class="inputfeltene">
                     <label>ETTERNAVN (IFØLGE PASS):</label>
                         <input type="name" id="name" class="inputfeltene">
                     <label class="bursdag">FØDSELSDATO:</label>
-                    <section>
-                        <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required>
-                        <input type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
-                        <input type="number" id="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
-                    </section>
+                        <section class="bursdagsdato_opsett">
+                            <input type="number" class="day" name="day" placeholder="DD" min="1" max="31" required>
+                            <input type="number" class="month" name="month" placeholder="MM" min="1" max="12" required>
+                            <input type="number" class="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
+                        </section>
                     <label>KJØNN:</label>
-                        <label for="male">Mann</label>
-                            <input type="radio" id="male" name="gender" value="male" checked>
-                        <label for="female">Kvinne</label>
-                            <input type="radio" id="female" name="gender" value="female">
-                </section>
+                    <input type="radio" id="female" name="gender" value="female">
+                        <label class="female">Kvinne</label>
+                    <input type="radio" id="male" name="gender" value="male" checked>
+                        <label class="male">Mann</label>
+                    </section>
                 <section class="leveranseplass">
                     <label for="email">E-post
                         <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
@@ -77,6 +113,7 @@
                     </label>
                 </form>
             </section>
+        </section>
             <form>
                 <section class="bestillingsskjema2">
                     <form>
@@ -86,16 +123,16 @@
                         <label>ETTERNAVN (IFØLGE PASS):</label>
                             <input type="name" id="name" class="inputfeltene">
                         <label class="bursdag">FØDSELSDATO:</label>
-                        <section>
-                            <input type="number" id="day" name="day" placeholder="DD" min="1" max="31" required>
-                            <input type="number" id="month" name="month" placeholder="MM" min="1" max="12" required>
-                            <input type="number" id="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
-                        </section>
+                            <section class="bursdagsdato_opsett">
+                                <input type="number" class="day" name="day" placeholder="DD" min="1" max="31" required>
+                                <input type="number" class="month" name="month" placeholder="MM" min="1" max="12" required>
+                                <input type="number" class="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
+                            </section>
                         <label>KJØNN:</label>
-                            <label for="male">Mann</label>
-                                <input type="radio" id="male" name="gender" value="male" checked>
-                            <label for="female">Kvinne</label>
-                                <input type="radio" id="female" name="gender" value="female">
+                        <input type="radio" id="female" name="gender" value="female">
+                            <label class="female">Kvinne</label>
+                        <input type="radio" id="male" name="gender" value="male" checked>
+                            <label class="male">Mann</label>
                     </section>
             </form>
             <button class="siste_trinn" type="button">Siste Trinn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
