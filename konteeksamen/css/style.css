@@ -18,7 +18,6 @@ body {
 }
 .menyer, .logo {
     font-size: 30px; 
-   
 }
 .menyer a {   
     text-decoration: none;
@@ -39,41 +38,61 @@ body {
 
 
 .navigasjon {
-    background-color: #f8f9fa;
-}
-.navigasjon a {
-    color: #000;
-    font-weight: bold;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-.navigasjon a:hover {
-    color: #ff00ff31;
-}
-.navigasjon {
     display: flex;
-    gap: 15px;
-    overflow-x: scroll;
+    gap: 20px;
+    overflow-x: auto; 
     scroll-behavior: smooth;
-    padding-bottom: 5px;
+    padding: 10px 0;
+    border-bottom: 2px solid #eaeaea; 
     scrollbar-width: none; 
 }
+
 .navigasjon::-webkit-scrollbar {
     display: none; 
 }
+
+
 .navigasjon a {
-    text-decoration: none;
-    color: #000;
+    text-decoration: none; 
+    color: #000; 
     font-weight: bold;
-    display: flex;
-    align-items: center;
-    gap: 5px;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+    padding: 5px 10px;
     white-space: nowrap; 
-    padding: 10px;
-    flex-shrink: 0; 
     font-size: 14px;
-    position: relative;
 }
+
+
+.fixed-pil {
+    position: fixed;
+    top: 50%; 
+    right: 10px; 
+    transform: translateY(-50%); 
+    font-size: 18px; 
+    color: #000; 
+    background-color: #f8f9fa; 
+    padding: 5px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+    cursor: pointer; 
+}
+.fixed-pil:hover {
+    background-color: #005f82; 
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
 .bannerbilde img {
     height: 300px;    
     width: 100%;
@@ -151,6 +170,37 @@ label[for="dato"] {
     left: 40px;    
 }
 
+.alt_navigasjon {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+}
+
+.navigasjon {
+    display: flex; 
+    gap: 15px; 
+}
+
+.navigasjon a {
+    display: flex; 
+    align-items: center;
+    gap: 5px; 
+    text-decoration: none;
+    color: inherit;
+}
+
+.alt_navigasjon i.fa-chevron-right {
+    font-size: 20px;
+    margin-left: 10px; 
+    margin-left: -15px;
+    height: auto;
+    width: auto;
+    background: rgba(255, 255, 255, 0.645); 
+    backdrop-filter: blur(20px); 
+    -webkit-backdrop-filter: blur(10px); 
+}
+
+
 
 
 
@@ -191,7 +241,7 @@ label[for="dato"] {
 }
 
 .kampanje_info, .bestill_btn{
-
+    
     top: -500px;
     margin: 70px;
     margin-top: 50px;    
@@ -218,15 +268,6 @@ label[for="dato"] {
     background-color: #e3b800;
     transition: background-color 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
 
 
 
@@ -279,12 +320,14 @@ label[for="dato"] {
 
 
 
-
-
-
-
-
-
+.tips_oppsettet {
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px auto; 
+    max-width: 1000px; 
+    text-align: center;
+}
 .tips {
     padding: 20px;
     background-color: #fff;
@@ -293,8 +336,11 @@ label[for="dato"] {
     max-width: 1000px;
 }
 .tips h2 {
-    padding: 10px;
-    margin-bottom: 20px;
+    margin: 25px;
+    padding-top: 20px;
+    font-size: 30px;
+
+    
 }
 .tips article {
     display: inline-block;
@@ -302,27 +348,24 @@ label[for="dato"] {
     background-color: #f8f9fa;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
 }
 .tips article img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 .tips article h5 {
-    font-size: 14px;
-    margin: 10px 0;
+    font-size: 20px;
+    margin: 0px 0px;
+    text-align: left;
 }
 .tips article p {
     font-size: 12px;
     color: #555;
+    text-align: left;
 }
-.tips article .tips_i {
-    color: #007bff;
-    text-decoration: none;
-    font-weight: bold;
-}
-.tips article .tips_i:hover {
-    text-decoration: underline;
-}
+
+
 .tips article .ukens_deal {
     position: absolute; 
     color: rgb(255, 255, 255);
@@ -332,6 +375,7 @@ label[for="dato"] {
     width: 90px;
     top: -15px;
     background-color: #3d9dc9; 
+    
 }
 .tips article .ukens_nyhet{
     position: absolute; 
@@ -359,6 +403,37 @@ label[for="dato"] {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden; 
 }
+.tips_info{
+    margin: 5px;
+    font-size: 15;
+    padding: 20px;
+    
+}
+.tips_i{
+    padding: 5px;
+}
+.tips article .tips_i {
+    color: #000; 
+    text-decoration: none; 
+    font-weight: bold; 
+    display: inline-block; 
+    position: relative; 
+    
+    
+}
+
+.tips article .tips_i::after {
+    content: ""; 
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%; 
+    height: 3px; 
+    
+    background-color: #3d9dc9; /* Blå farge */
+}
+
+
 
 
 
@@ -374,96 +449,41 @@ label[for="dato"] {
 footer{ 
     background-color: #000000ec;
     color: white;
-    padding: 40px;   
-    
+    padding: 40px;      
 }
-
-
-
-
-
-
 .flagg {
     flex-direction: column;
     display: flex;
-    padding: 20px; /* Polstring rundt */
-    display: inline-block; /* Plasser teksten ved siden av flagget */
-}
-
-.sdns {
-    grid-template-columns: repeat(2, 1fr); /* To kolonner for hovedseksjonen */
-}
-
-.sdns img {
-    width: 40px; /* Størrelse på flaggene */
-    height: auto; /* Bevarer proporsjonene */
-    display: inline-block;
-    vertical-align: middle; /* Juster flaggene med teksten */
-}
-
-.sdns p {
-    display: inline-block; /* Plasser teksten ved siden av flagget */
-    margin: 0; /* Fjern standard marg */
-    font-size: 14px; /* Juster skriftstørrelsen */
-    line-height: 40px; /* Juster linjehøyde med flagget */
-    
-}
-
-.n {
-    grid-template-columns: repeat(2, 1fr); /* To kolonner for hovedseksjonen */
-    width: 40px; /* Størrelse på flagget */
-    height: auto;     
-}
-
-.flagg p:last-of-type {
-    font-size: 14px;
-    
-    display: inline-block; /* Plasser teksten ved siden av flagget */
-    
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*
-.flagg {
-    display: grid;
-    justify-items: center;
     padding: 20px; 
+    display: inline-block; 
 }
-
-.flagg img {
-
-    height: auto; 
+.sdns {
+    grid-template-columns: repeat(2, 1fr); 
 }
-
-.flagg p {
+.sdns img {
+    width: 40px; 
+    height: auto;
+    display: inline-block;
+    vertical-align: middle; 
+}
+.sdns p {
+    display: inline-block; 
     margin: 0; 
     font-size: 14px; 
+    line-height: 40px;    
 }
-
-*/
-
-
-
-
-
-
+.n {
+    grid-template-columns: repeat(2, 1fr);
+    width: 40px; 
+    height: auto;     
+}
+.flagg p:last-of-type {
+    font-size: 14px;
+    display: inline-block;    
+}
 .betalning{
     padding-top: 40px;
 }
-
 .betalnings_kort {
     display: flex; 
     gap: 15px; 
@@ -473,12 +493,6 @@ footer{
 .betalnings_kort i {
     font-size: 32px; 
 }
-
-
-
-
-
-
 .nyhetstilbud_input {
     display: block;
     background-color: #0000008c; 
@@ -534,10 +548,6 @@ footer{
 
 
 
-
-
-
-
 .kontakt_footer {
     padding-top: 40px;
     padding-bottom: 40px;
@@ -553,14 +563,6 @@ footer{
     font-size: 14px;
     margin-left: -1px;
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -582,25 +584,6 @@ footer{
     color: #cccccc60; 
     transition: color 0.3s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -633,9 +616,6 @@ footer{
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
 }
-
-
-
 
 
 
@@ -758,10 +738,6 @@ nav a.active::after {
 
 
 
-
-
-
-
 .rom_valg {
     margin: 20px;
 }
@@ -772,8 +748,6 @@ nav a.active::after {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
-
-
 .rom_kort {
     padding: 0px;
     margin-bottom: 40px;
@@ -828,13 +802,6 @@ nav a.active::after {
 
 
 
-
-
-
-
-
-
-
 .velg_rom {
     margin: 20px;
     border: 1px solid #ccc; 
@@ -850,17 +817,23 @@ nav a.active::after {
     justify-content: space-between; 
     width: 82%;
 }
-.velg_rom.fixed {
+
+
+
+
+
+.velg_rom {
+    margin: 0px;
+    border: 1px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 30px 30px 0 0; 
     position: fixed; 
-    bottom: 0; 
-    left: 0; 
-    width: 100%; 
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); 
+    align-items: center; 
+    background-color: white;
+    width: 85%;
+    position: sticky; 
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
 }
-
-
-
-
 .velg_rom_info h2 {
     font-size: 22px; 
     margin: 0;
@@ -901,17 +874,6 @@ nav a.active::after {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /*Order siden*/
 .navigasjon_order {
     background-color: #3a96b3;
@@ -927,8 +889,6 @@ nav a.active::after {
     padding: 20px;
     gap: 25px;
 }
-
-
 .navigasjon_order {
     overflow: scroll; 
     -ms-overflow-style: none; 
@@ -939,32 +899,15 @@ nav a.active::after {
 }
 .navigasjon_order p {
     font-size: 38px;
-    margin: 0;    
-
+    margin: 0;
 }
 .navigasjon_order a {
     color: white;
     text-decoration: none; 
-    
 }
 .navigasjon_order a:hover {
     text-decoration: underline; /
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -979,30 +922,16 @@ nav a.active::after {
     font-size: 20px;
     margin: -5px;
 }
-
-
-
-
-
-
-
-
 .dine_valg h4{
     margin-top: 0px;
-    justify-content: center; /* Sentrer horisontalt */
-    align-items: center; /* Sentrer vertikalt */
-
+    justify-content: center; 
+    align-items: center; 
 }
-
-
 .dine_valg {
     max-width: 400px;
     margin: 20px auto;
-    font-family: Arial, sans-serif;
-    
+    font-family: Arial, sans-serif;   
 }
-
-/* Label styling (header with toggle functionality) */
 .toggle-label {
     align-items: center;
     cursor: pointer;
@@ -1010,19 +939,13 @@ nav a.active::after {
     font-weight: bold;
     color: #333;
 }
-
 .toggle-label i {
     margin-left: 8px;
     transition: transform 0.3s ease;
 }
-
-/* Hidden checkbox */
 .toggle-checkbox {
-    display: none;
-    
+    display: none;   
 }
-
-/* Hidden section by default */
 .dine_valg {
     display: flex:
     background-color: #fff;
@@ -1031,42 +954,32 @@ nav a.active::after {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     padding: 10px;
 }
-
-
 .ikoner_order {
     margin-left: -7px;
-    
 }
-
-
-/* Show section when checkbox is checked */
 .toggle-checkbox:checked ~ .dine_valg {
     display: block;
 }
-
-/* Rotate arrow icon when section is open */
 .toggle-checkbox:checked + .toggle-label i {
     transform: rotate(90deg);
 }
-
-
 .dine_valg img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 16px;
 }
-
 .info_omhotell {
     font-size: 14px;
     color: #555;
     line-height: 1.6;   
 }
-
 .info_omhotell i {
-    margin-right: 8px;
+    margin-right: 15px;   
 }
-
+.ikoner_order i{
+    font-size: 10px;
+}
 .klussa_over {
     border-top-style: outset;
     margin-top: 30px;
@@ -1074,12 +987,141 @@ nav a.active::after {
     color: #aaa;
     text-decoration: line-through;
 }
-
 .red_farge {
     margin-top: -10px;
     font-size: 18px;
     color: #e63946;
 }
+
+
+
+
+
+
+.bestillingsopplysninger{
+    padding: 20px;
+}
+.bestillingsskjema1, .bestillingsskjema2 {
+    background-color: #8075752d;
+    font-weight: bold; 
+    background-color: #d1d0d0c7; 
+    padding: -0px 8px;
+    margin-top: -0px;
+    border-radius: 8px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+}
+.bestillingsskjema1 h5, .bestillingsskjema2 h5 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 16px;  
+}
+
+.bestillingsskjema1 input[type="text"], 
+.bestillingsskjema1 input[type="name"], 
+.bestillingsskjema1 input[type="number"], 
+.bestillingsskjema1 input[type="email"], 
+.bestillingsskjema1 input[type="tel"], 
+.bestillingsskjema1 select,
+.bestillingsskjema2 input[type="text"], 
+.bestillingsskjema2 input[type="name"], 
+.bestillingsskjema2 input[type="number"], 
+.bestillingsskjema2 input[type="email"], 
+.bestillingsskjema2 input[type="tel"], 
+.bestillingsskjema2 select {
+    width: 100%; 
+    padding: 10px;
+    margin: 8px 0 16px 0; 
+    border: 1px solid #ccc;
+    border-radius: 4px; 
+    box-sizing: border-box; 
+    font-size: 14px; 
+}
+
+
+.bestillingsskjema1 input::placeholder, 
+.bestillingsskjema2 input::placeholder {
+    color: #aaa; 
+    font-style: italic; 
+}
+
+.bestillingsskjema1 label, 
+.bestillingsskjema2 label {
+    display: block; 
+    font-size: 14px; 
+    color: #333; 
+    margin-bottom: 8px; 
+    margin-top: 15px; 
+}
+
+.bestillingsskjema1 .bursdagsdato_opsett input, 
+.bestillingsskjema2 .bursdagsdato_opsett input {
+    width: 30%; 
+    display: inline-block; 
+    margin-right: 5px; 
+    text-align: center; 
+    font-size: 14px; 
+}
+
+
+.bestillingsskjema1 input[type="radio"], 
+.bestillingsskjema2 input[type="radio"] {
+    margin-right: 8px; 
+}
+
+.bestillingsskjema1 label.female, 
+.bestillingsskjema1 label.male, 
+.bestillingsskjema2 label.female, 
+.bestillingsskjema2 label.male {
+    display: inline-block; 
+    font-size: 14px;
+    color: #333;
+    margin-right: 15px; 
+}
+.male, .female{
+    display: inline-block;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.bursdagsdato_opsett{
+    display: flex;
+    gap: 30px;
+}
+.day, .month, .year {
+    display: inline-block; 
+    margin: 20px;
+}
+.day:hover, .month:hover, .year:hover {
+    border-color: #005f82; 
+}
+.day:focus, .month:focus, .year:focus {
+    border-color: #0078a8;
+    box-shadow: 0 0 5px rgba(0, 120, 168, 0.5); 
+}
+.siste_trinn {
+    background-color: #e7b447; 
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold; 
+}
+
+.siste_trinn:hover {
+    background-color: #efd045; 
+}
+
+
+
+
 
 
 
