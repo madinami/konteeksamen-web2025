@@ -147,23 +147,23 @@ label[for="sook"] {
 .bestille button:hover {
     background-color: #f9a825;
 }
-.reis {
-    display: flex; 
-    gap: 10px; 
+
+.reiselengde{
     width: 100%; 
 }
-#reiselengde,
-#date {
-    flex: 1; 
-    box-sizing: border-box;
-    flex-direction: column;
-    vertical-align: top; 
+.reis {
+    display: flex; 
+    gap: 10px;   
 }
+
+
 
 label[for="dato"] {
     position: relative;
     top: -7px;
     left: 50px;    
+    
+    
 }
 
 .alt_navigasjon {
@@ -318,14 +318,14 @@ label[for="dato"] {
 
 .tips_oppsettet {
     display: flex;
-    flex-wrap: wrap; /* Tillater flere rader */
+    flex-wrap: wrap; 
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     margin: 20px auto; 
     max-width: 1000px; 
     text-align: center;
-    justify-content: center; /* Fordeler kortene jevnt */
+    justify-content: center;
     gap: 20px;
 
 
@@ -349,7 +349,7 @@ label[for="dato"] {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    position: relative; /* Viktig for å feste elementer inni kortet */
+    position: relative;
     
 }
 
@@ -445,7 +445,7 @@ label[for="dato"] {
     width: 100%; 
     height: 3px; 
     float: left;
-    background-color: #3d9dc9; /* Blå farge */
+    background-color: #3d9dc9;
 }
 
 
@@ -471,7 +471,7 @@ footer{
 }
 .flagg {
     padding: 20px;
-    text-align: center; /* Sentrerer teksten inni */
+    text-align: center; 
 }
 
 
@@ -586,8 +586,8 @@ footer{
 
 
 .nyhetstilbud_kundeservice{
-    display: inline-block; /* Plasser elementene ved siden av hverandre */
-    margin-right: 10px; /* Eventuelt mellomrom */
+    display: inline-block; 
+    margin-right: 10px; 
 }
 
 
@@ -613,11 +613,6 @@ footer{
 
 
 
-
-
-
-
-/*Hotell siden*/ 
 .hotell_bilder img{
     width: 100%;
     height: 100%;
@@ -642,6 +637,78 @@ footer{
     overflow-x: auto; 
     scroll-snap-type: x mandatory; 
 }
+
+
+.hotell_bilderIkoner {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+
+  
+  .hotell_ikoner i {
+    font-size: 1.4rem;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.6);
+    padding: 6px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .hotell_ikoner i:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: #e90303ea;
+  }
+  .hotell_ikoner .fa-chevron-left {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hotell_ikoner .fa-chevron-right {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .hotell_ikoner .fa-heart {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: red;
+  }
+  
+  .hotell_ikoner .fa-images {
+    position: absolute; /* Gjør det enklere å plassere på ønsket sted */
+    bottom: 30px; /* Plasser det 70px opp fra bunnen */
+    right: 10px; /* Flytt det til høyre ved 10px avstand fra kanten */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Sentraliser innholdet i ikonet */
+    font-size: 1.5rem; /* Juster størrelsen hvis nødvendig */
+    background: rgba(0, 0, 0, 0.6); /* Bakgrunnsfarge for synlighet */
+    color: #fff;
+    padding: 12px;
+    border-radius: 32px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.hotell_ikoner .fa-images:hover {
+    background: rgba(255, 255, 255, 0.8); /* Endre bakgrunnsfarge ved hover */
+    color: #000; /* Endre tekstfarge ved hover */
+}
+
+
 
 
 
@@ -829,19 +896,21 @@ nav a.active::after {
 
 
 .velg_rom {
-    margin: 20px;
-    border: 1px solid #ccc; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-    border-radius: 30px 30px 0px 0px; 
-    padding: 20px; 
-    margin-bottom: 0px; 
-    display: flex; 
-    justify-content: space-between; 
-    align-items: center; 
-    background-color: white;
+    position: sticky;
     bottom: 0; 
-    justify-content: space-between; 
-    width: 82%;
+    left: 4%; 
+    max-width: 1160px; 
+    width: 90%; 
+    margin: 0 auto; 
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px 30px 0px 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    justify-content: space-between;
+    -index: 1000; 
 }
 
 
@@ -942,6 +1011,9 @@ nav a.active::after {
 
 
 
+details summary {
+    list-style: none; /* Fjerner standard pil */
+}
 
 .sol {
     color: rgb(248, 207, 26);
@@ -949,6 +1021,7 @@ nav a.active::after {
     margin: -5px;
 }
 .dine_valg h4{
+    height: 0px;
     margin-top: 0px;
     justify-content: center; 
     align-items: center; 
@@ -996,28 +1069,31 @@ nav a.active::after {
     margin-bottom: 16px;
 }
 .info_omhotell {
-    font-size: 14px;
     color: #555;
+    font-size: 14px;
     line-height: 1.6;   
 }
 .info_omhotell i {
     margin-right: 15px;   
+    margin-left: 10px;
 }
 .ikoner_order i{
     font-size: 10px;
 }
 .klussa_over {
-    border-top-style: outset;
-    margin-top: 30px;
-    font-size: 14px;
     color: #aaa;
+    border-top-style: outset;
+    font-size: 14px;
     text-decoration: line-through;
+    margin-top: 30px;
 }
 .red_farge {
+    color: #e63946;
     margin-top: -10px;
     font-size: 18px;
-    color: #e63946;
 }
+
+
 
 
 
@@ -1029,21 +1105,20 @@ nav a.active::after {
 }
 .bestillingsskjema1, .bestillingsskjema2 {
     background-color: #8075752d;
-    font-weight: bold; 
     background-color: #d1d0d0c7; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+    margin-bottom: 20px;
+    font-weight: bold; 
     padding: -0px 8px;
     margin-top: -0px;
     border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    margin-bottom: 20px;
 }
 .bestillingsskjema1 h5, .bestillingsskjema2 h5 {
-    font-size: 18px;
-    font-weight: bold;
     color: #333;
     margin-bottom: 16px;  
+    font-size: 18px;
+    font-weight: bold;
 }
-
 .bestillingsskjema1 input[type="text"], 
 .bestillingsskjema1 input[type="name"], 
 .bestillingsskjema1 input[type="number"], 
@@ -1056,54 +1131,47 @@ nav a.active::after {
 .bestillingsskjema2 input[type="email"], 
 .bestillingsskjema2 input[type="tel"], 
 .bestillingsskjema2 select {
+    border: 1px solid #ccc;
+    border-radius: 4px; 
     width: 100%; 
     padding: 10px;
     margin: 8px 0 16px 0; 
-    border: 1px solid #ccc;
-    border-radius: 4px; 
     box-sizing: border-box; 
     font-size: 14px; 
 }
-
-
 .bestillingsskjema1 input::placeholder, 
 .bestillingsskjema2 input::placeholder {
     color: #aaa; 
     font-style: italic; 
 }
-
 .bestillingsskjema1 label, 
 .bestillingsskjema2 label {
-    display: block; 
-    font-size: 14px; 
     color: #333; 
     margin-bottom: 8px; 
+    display: block; 
+    font-size: 14px; 
     margin-top: 15px; 
 }
-
 .bestillingsskjema1 .bursdagsdato_opsett input, 
 .bestillingsskjema2 .bursdagsdato_opsett input {
-    width: 30%; 
-    display: inline-block; 
     margin-right: 5px; 
     text-align: center; 
+    width: 30%; 
+    display: inline-block; 
     font-size: 14px; 
 }
-
-
 .bestillingsskjema1 input[type="radio"], 
 .bestillingsskjema2 input[type="radio"] {
     margin-right: 8px; 
 }
-
 .bestillingsskjema1 label.female, 
 .bestillingsskjema1 label.male, 
 .bestillingsskjema2 label.female, 
 .bestillingsskjema2 label.male {
-    display: inline-block; 
-    font-size: 14px;
     color: #333;
     margin-right: 15px; 
+    display: inline-block; 
+    font-size: 14px;
 }
 .male, .female{
     display: inline-block;
@@ -1132,41 +1200,46 @@ nav a.active::after {
     font-size: 16px;
     border: none;
     border-radius: 4px;
+    gap: 10px;
+    transition: background-color 0.3s;
+    font-weight: bold; 
     cursor: pointer;
     margin-top: 20px;
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    transition: background-color 0.3s;
-    font-weight: bold; 
 }
-
 .siste_trinn:hover {
     background-color: #efd045; 
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-
+.nav_hotell a {
+    position: relative; 
+    text-decoration: none;
+    color: black;
+}
+.nav_hotell a::after {
+    background-color: rgba(65, 116, 212, 0.767);
+    transition: width 0.3s ease-in-out; 
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 3px;
+    left: -10px;
+    bottom: -22px; 
+}
+.nav_hotell a:hover::after {
+    width: 145%;
+}
+.kart {    
+    max-width: 800px; 
+    height: 450px; 
+    width: 100%;
+    border: 0; 
+}
 
 
 
 
 @media (min-width: 1200px) {
-    
-
     .felles_topp{
         position:relative;
     }
@@ -1176,49 +1249,34 @@ nav a.active::after {
     }
 
     .main_index {
-        padding: 0 30px; /* White space på venstre og høyre */
-        max-width: 1200px; /* Begrens bredden på innholdet */
+        padding: 0 30px; 
+        max-width: 1200px; 
         margin: 0 auto; 
     }
-
-
-
-
-
-
     .reis {
         display: flex; 
         gap: 10px; 
- 
     }
-
-
-
     .utfyllinsskjema label {
         position: relative;
         top: -20px;
-        left: 40px;    
-        
+        left: 40px;  
     }
-
-
-
     .bestille form {
-        flex-direction: row; /* Endrer oppførsel til rad for desktop */
-        gap: 10px; /* Legger til mellomrom mellom feltene */
-
+        flex-direction: row; 
+        gap: 10px;
+        justify-items: center;
     }
-
-
     .utfyllinsskjema {
-        display: flex; /* Bruker Flexbox */
-        align-items: center; /* Vertikal justering */
-        padding: 20px; /* Indre marg */
+        display: flex; 
+        align-items: center; 
+        padding: 20px; 
+        justify-items: center;
     }
-
-
+    .reis {
+        margin-right: 30px;
+    }
     .ok input{
-
        width: 50%;
        gap: -20px; 
     }
@@ -1230,7 +1288,6 @@ nav a.active::after {
         margin-left: -50px;
         margin-right: -20px;
     }
-
     .reiselengde {
         margin-left: -90px;
     }
@@ -1244,63 +1301,53 @@ nav a.active::after {
         color: #000000;
         background-color: black;
     }
-
     .bestille {
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         margin: 154px;  
-
     }
- 
     .banner img{
         height: 300px;
         
     }
-
-
-    
-
-
-
-
-
-    
-    
-
-
-
-    
-
-    
-    
+    label[for="dato"] {
+        position: relative;
+        top: -7px;
+        left: 10px;    
+    }
+    label[for="fra"],
+    label[for="reiselengd"],
+    label[for="antall"] {
+        left: 10px;
+    }
+    .antall {
+        display: inline-block;
+    }
+    label[for="fra"],
+    label[for="antall"] {
+    left: -10px;
+    }
     .kampanjeseksjon {
         padding: 30px;
         position: relative;
         margin: auto;
         max-width: 1200px;
         overflow: hidden;
-        top: -200px;
-        max-height: 120%;
+        top: -300px;
         padding-left: 125px;
         padding-right: 125px;
-
     }
-
     .kampanje_info {
         position: absolute;
         top: 0%;
-        right: 9%; /* Flytter boksen til høyre */
+        right: 9%; 
         background-color: rgb(0, 173, 236);
         color: rgb(0, 0, 0);
-    
-    /* Runde hjørner på boksen */
         max-width: 300px;
         height: 200px;
-        text-align: center; /* Sentraliserer tekst inni boksen */
-        
+        text-align: center;    
     }
-
     .kampanje_info h2 {
         font-size: 22px;
         margin-bottom: 10px;
@@ -1310,32 +1357,6 @@ nav a.active::after {
         font-size: 16px;
         margin-bottom: 5px;
     }
-
-    .kampanje_info button {
-        background-color: #ffc107; /* Gul farge på knappen */
-        color: black;
-        font-size: 16px;
-        border: none;
-        border-radius: 5px; /* Runde hjørner på knappen */
-        padding: 10px 20px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     .tilbudsseksjon {
         display: flex;
@@ -1353,7 +1374,6 @@ nav a.active::after {
         max-width: 1200px; 
         margin: 0 auto; 
     }
-
     .tips article {
         flex: 1 1 calc(33.33% - 20px); 
         max-width: calc(33.33% - 20px); 
@@ -1362,20 +1382,6 @@ nav a.active::after {
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
         overflow: hidden; 
     }
-
-
-
-
-
-
-
-
-
-
-
-    
-
-    
     .footer_bredde{
         display: flex; 
         justify-content: space-between; 
@@ -1384,6 +1390,158 @@ nav a.active::after {
 
 
 
+
+
+    
+
+    .hotell_bilderIkoner{
+        width: 90%; /* Definer en bredde */
+        margin: 0 auto; /* Sentrer horisontalt */
+        max-width: 1100px;
+    }
+
+
+    .hotell_bilder {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-gap: 10px; 
+        margin: 0 auto; 
+    }
+    .hotell_bilder {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr); 
+        grid-gap: 10px; 
+        
+    }
+    .stor_bilde {
+        grid-column: span 2;
+        grid-row: span 2; 
+    }
+    .lite_bilde {
+        grid-column: span 1;
+        grid-row: span 1; 
+    }
+    .hotell_bilder img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; 
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);    
+    }
+    .hotell_piler {
+        display: none; 
+    }
+    .header_hotell{
+        margin: 80px;
+        
+    }
+
+   
+
+    
+    .hoveddel_hotell {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 60px;
+        max-width: 1200px;
+        align-items: center;
+        padding-left: 70px;
+        font-family: Arial, sans-serif;
+        width: 85%; /* Definer en bredde */
+        margin: 0 auto; /* Sentrer horisontalt */
+        width: 85%; /* Definer en bredde */
+        margin: 0 auto; /* Sentrer horisontalt */
+        max-width: 1100px;
+    }
+    .hotell_vurdering h2 {
+        font-size: 2rem;
+        margin-bottom: 10px;
+    }
+    .fasiliteter {
+        margin-top: -100px;
+    }
+    
+   
+    
+    .kart {
+        flex: 1; /* Tar opp 1/3 av plassen */
+        width: 100%;
+        height: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin-bottom: -150px;
+    }
+    .hotell_kart{
+        transform: translateY(-220px); /* Flytter kartet 20px opp */
+
+    }    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .rom_valg {
+        max-width: 1132px;
+        margin: 0 auto;
+    }
+
+    .tre_artikkelkort {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        flex: 1 1 100%; /* Elementet tar hele linjen */
+        max-width: 100%; /* Sikrer at det ikke overstiger full bredde */
+    }
+
+    .tre_artikkelkort {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+    }
+    
+    .siste_artikkelkort {
+        display: flex; /* Bruk flex for plassering */
+        justify-content: flex-start; /* Plasser kortet til venstre */
+        gap: 20px;
+    }
+    
+    .siste_artikkelkort .rom_kort {
+        flex: 1 1 calc(33.33% - 20px); /* Samme størrelse som de andre */
+        max-width: calc(33.33% - 20px); /* Maks bredde som matcher */
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .velg_rom {
+        position: sticky;
+        max-width: 1090px;
+        margin: 20px auto;
+        border-radius: 10px;
+        box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        background-color: white;
+        z-index: 10; /* Sørger for at elementet vises over annet innhold */
+   
+    }
+    
+
+
+
+
+
+    
 
 
 

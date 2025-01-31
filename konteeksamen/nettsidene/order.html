@@ -1,19 +1,26 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../ikoner/css/brands.css">
-    <link rel="stylesheet" href="../ikoner/css/solid.css">
-    <link rel="stylesheet" href="../ikoner/css/all.css">
-    <title>Reise</title>
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../ikoner/css/brands.css">
+<link rel="stylesheet" href="../ikoner/css/solid.css">
+<link rel="stylesheet" href="../ikoner/css/all.css">
+<title>Bestillingsside</title>
 </head>
+<body>
+<header id="global_header">
+    <section class="felles_topp">
+        <h1 class="logo">
+            <a href="../nettsidene/index.html">
+                <img src="../bilder/logo.png" alt="logo">
+            </a>
+        </h1> 
+        <section class="menyer">
+            <a href="../nettsidene/order.html"><i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href=""><i class="fa-regular fa-user"></i></a>
+            <a href=""><i class="fa-solid fa-bars"></i></a>
+        </section>
+    </section>
 
-
-
-
-
+    
+  
 
 <header>
     <nav class="navigasjon_order">
@@ -32,13 +39,14 @@
         <a href="">Bestill</a>
         <p><i class="fa-solid fa-chevron-right"></i></p>
     </nav>
-</header>
+</header> 
 <body>
     <section class="dine_valg">
-        <input type="checkbox" id="toggle" class="toggle-checkbox" hidden>
-        <label for="toggle" class="toggle-label">
-        <h4>Dine valg <i class="fa-solid fa-chevron-right"></i></h4>
-        <img src="../bilder/landskap/basseng.jpg" alt="Bilde">
+        <details>
+            <summary class="toggle-label">
+                <h4>Dine valg <i class="fa-solid fa-chevron-right"></i></h4>
+            </summary>
+            <img src="../bilder/landskap/basseng.jpg" alt="Bilde">
             <section class="info_omhotell">
                 <h5>Hokus Pokus Diplodocus</h5>
                 <section class="sol">
@@ -54,14 +62,16 @@
                     <p><i class="fa-regular fa-user"></i> 4 voksne</p>
                     <p><i class="fa-solid fa-bed"></i>Deluxerom, Balkong og ikke spesifisert utsikt</p>
                     <p><i class="fa-solid fa-utensils"></i> Frokostbuffë</p>
-                    <p><i class="fa-solid fa-plane"></i>Oslo Lufthavn - Preveza</i></p>
+                    <p><i class="fa-solid fa-plane"></i>Oslo Lufthavn - Preveza</p>
                 </section>
             </section>
             <section class="ny_gammel_pris">
                 <p class="klussa_over">22 003,-</p>
                 <p class="red_farge">19 803,-</p>
             </section>
+        </details>
     </section>
+    
     <main>
         <section class="bestillingsopplysninger">
             <h2>Oppgi dine bestillingsopplysninger</h2>
@@ -133,11 +143,67 @@
                             <label class="female">Kvinne</label>
                         <input type="radio" id="male" name="gender" value="male" checked>
                             <label class="male">Mann</label>
-                    </section>
-            </form>
+                    </form>
+                </section>
             <button class="siste_trinn" type="button">Siste Trinn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </section>
     </main>
+    <footer>
+        <section class="flagg">
+            <img src="../bilder/flagg/sweden.png" alt="Sverige"> <p>Sverige</p>
+            <img src="../bilder/flagg/denmark.png" alt="Danmark"> <p>Danmark</p>
+            <img src="../bilder/flagg/norway.png" alt="Norge"> <p>Norge</p>
+            <img src="../bilder/flagg/material.png" alt="Suomi"> <p>Suomi</p>
+            <img src="../bilder/flagg/netherlands.png" class="n" alt="Nederland"> <p>Nederland</p>
+        </section>
+    
+        <section class="footer_bredde">
+            <section class="betalning">
+                <h4>BETALNINGSMETODER</h4>
+                <section class="betalnings_kort">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-cc-paypal"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                    <i class="fa-brands fa-cc-amazon-pay"></i>
+                </section>
+            </section>
+    
+            <section class="nyhetstilbud">
+                <h4>NYHETER OG TILBUD</h4>
+                <section class="nyhetstilbud_input">
+                    <h5>Meld deg på nyhetsbrev her</h5>
+                    <section class="nyhestilbud_input_knapp">
+                        <input type="registration" placeholder="travel@gmail.com" id="registration">
+                        <button type="submit" class="search-btn">Send</button>
+                    </section>
+                </section>
+                <p>Kjøp reisegavekort</p>
+            </section>
+            <section class="kontakt_footer" id="kontakt_footer">
+                <h4>KUNDESERVICE</h4>
+                <section class="kontakt_info">
+                    <p>Spørsmål og Svar</p>
+                    <p>Chat</p>
+                    <p>Kontakt</p>
+                    <a href="https://1drv.ms/w/c/33f81c68165cc655/EYclYDNgukBKvj8N8P-7lkgBRpgVkpzHS32qEAmnZ69LmQ?e=M9PO5j" target="_blank">Tilgjengelighets-ærklæringen</a>
+                </section>
+            </section>
+    
+    
+    
+            <section class="sosiale_footer">
+                <h4>SOSIALE MEDIER</h4>
+                <section class="sosiale_ikoner">
+                    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://pinterest.com/" target="_blank"><i class="fa-brands fa-pinterest"></i></a>
+                    <a href="https://tiktok.com/" target="_blank"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="https://youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                </section>
+            </section>
+        </section>
+    </footer>
 </body>
 </html>
 
