@@ -1056,12 +1056,6 @@ details summary {
 .ikoner_order {
     margin-left: -7px;
 }
-.toggle-checkbox:checked ~ .dine_valg {
-    display: block;
-}
-.toggle-checkbox:checked + .toggle-label i {
-    transform: rotate(90deg);
-}
 .dine_valg img {
     width: 100%;
     height: auto;
@@ -1091,6 +1085,71 @@ details summary {
     color: #e63946;
     margin-top: -10px;
     font-size: 18px;
+}
+
+
+.dine_valg_ {
+    display: none; /* Gjør den skjult som standard */
+    max-width: 400px;
+    margin: 20px auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.hotell_inlegget_ img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 16px;
+}
+
+.info_omhotell_ {
+    color: #555;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.info_omhotell_ h5 {
+    font-size: 15px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: -5px;
+    color: #000;
+}
+
+.sol_ i {
+    padding-bottom: 20px;
+    color: rgb(248, 207, 26);
+    margin-right: 5px;
+    font-size: 16px;
+}
+
+.ikoner_order_ p {
+    font-size: 14px;
+    color: #555;
+    margin: 9px 0;
+    display: flex;
+    align-items: center;
+}
+
+.ikoner_order_ i {
+    margin-right: 8px;
+    color: #070707;
+}
+
+.ny_gammel_pris_ {
+    font-size: 16px;
+    text-align: left;
+}
+
+.red_farge_ {
+    color: #000000a8;
+    font-weight: bold;
+    font-size: 16px;
 }
 
 
@@ -1280,7 +1339,7 @@ details summary {
        width: 50%;
        gap: -20px; 
     }
-    .fa-chevron-right {
+    .index_pil {
         display: none;
         visibility: hidden;
     }
@@ -1395,8 +1454,8 @@ details summary {
     
 
     .hotell_bilderIkoner{
-        width: 90%; /* Definer en bredde */
-        margin: 0 auto; /* Sentrer horisontalt */
+        width: 90%;
+        margin: 0 auto; 
         max-width: 1100px;
     }
 
@@ -1446,10 +1505,10 @@ details summary {
         align-items: center;
         padding-left: 70px;
         font-family: Arial, sans-serif;
-        width: 85%; /* Definer en bredde */
-        margin: 0 auto; /* Sentrer horisontalt */
-        width: 85%; /* Definer en bredde */
-        margin: 0 auto; /* Sentrer horisontalt */
+        width: 85%; 
+        margin: 0 auto; 
+        width: 85%; 
+        margin: 0 auto;
         max-width: 1100px;
     }
     .hotell_vurdering h2 {
@@ -1463,7 +1522,7 @@ details summary {
    
     
     .kart {
-        flex: 1; /* Tar opp 1/3 av plassen */
+        flex: 1; 
         width: 100%;
         height: 300px;
         border-radius: 10px;
@@ -1475,56 +1534,37 @@ details summary {
 
     }    
     
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
     .rom_valg {
         max-width: 1132px;
         margin: 0 auto;
     }
-
     .tre_artikkelkort {
         display: flex;
         gap: 20px;
         justify-content: center;
         flex: 1 1 100%; /* Elementet tar hele linjen */
-        max-width: 100%; /* Sikrer at det ikke overstiger full bredde */
+        max-width: 100%; 
     }
-
     .tre_artikkelkort {
         display: flex;
         gap: 20px;
         justify-content: center;
     }
-    
     .siste_artikkelkort {
-        display: flex; /* Bruk flex for plassering */
-        justify-content: flex-start; /* Plasser kortet til venstre */
+        display: flex; 
+        justify-content: flex-start; 
         gap: 20px;
     }
-    
     .siste_artikkelkort .rom_kort {
-        flex: 1 1 calc(33.33% - 20px); /* Samme størrelse som de andre */
-        max-width: calc(33.33% - 20px); /* Maks bredde som matcher */
+        flex: 1 1 calc(33.33% - 20px); 
+        max-width: calc(33.33% - 20px); 
         background-color: #fff;
         border-radius: 10px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         overflow: hidden;
     }
-
     .velg_rom {
         position: sticky;
         max-width: 1090px;
@@ -1532,20 +1572,56 @@ details summary {
         border-radius: 10px;
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         background-color: white;
-        z-index: 10; /* Sørger for at elementet vises over annet innhold */
-   
+        z-index: 10; 
     }
     
 
 
+    .nav_hotell  {
+        margin-left: -30px;
+    }
 
 
+
+
+
+
+    summary {
+        display: none;
+    }
+    .dine_valg{
+        display: contents;
+    }
+    .dine_valg_ {
+        display: block; /* Gjør seksjonen synlig */
+        height: 650px;
+        margin-right: 0px;
+    }
+
+
+    .bestille_desktopSplit{
+        
+        box-sizing: border-box; 
+        padding: 20px;
+        margin: 15px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        gap: 0px; 
+        width: 100%; 
+        align-items: stretch; 
+        object-fit: cover;
+        justify-items: self-start;
+
+    }
+    /* Sikrer at begge seksjoner tar opp lik plass */
+    .dine_valg_,
+    .bestillingsopplysninger {
+        width: 70%;
+    }
+    
 
     
 
 
-
-
-
-
 }
+
