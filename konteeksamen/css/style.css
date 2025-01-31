@@ -147,7 +147,7 @@ label[for="sook"] {
 .bestille button:hover {
     background-color: #f9a825;
 }
-.reisDato {
+.reis {
     display: flex; 
     gap: 10px; 
     width: 100%; 
@@ -156,18 +156,14 @@ label[for="sook"] {
 #date {
     flex: 1; 
     box-sizing: border-box;
-    padding: 10px; 
-    width: calc(50% - 10px); 
     flex-direction: column;
     vertical-align: top; 
 }
-.reis{
-    display: flex;
-}
+
 label[for="dato"] {
     position: relative;
     top: -7px;
-    left: 40px;    
+    left: 50px;    
 }
 
 .alt_navigasjon {
@@ -1162,9 +1158,7 @@ nav a.active::after {
 
 
 
-
-
-
+   
 
 
 
@@ -1172,6 +1166,14 @@ nav a.active::after {
 
 @media (min-width: 1200px) {
     
+
+    .felles_topp{
+        position:relative;
+    }
+
+    .bannerbilde img{
+        margin-top: -120px;
+    }
 
     .main_index {
         padding: 0 30px; /* White space på venstre og høyre */
@@ -1181,63 +1183,153 @@ nav a.active::after {
 
 
 
+
+
+
+    .reis {
+        display: flex; 
+        gap: 10px; 
+ 
+    }
+
+
+
+    .utfyllinsskjema label {
+        position: relative;
+        top: -20px;
+        left: 40px;    
+        
+    }
+
+
+
+    .bestille form {
+        flex-direction: row; /* Endrer oppførsel til rad for desktop */
+        gap: 10px; /* Legger til mellomrom mellom feltene */
+
+    }
+
+
+    .utfyllinsskjema {
+        display: flex; /* Bruker Flexbox */
+        align-items: center; /* Vertikal justering */
+        padding: 20px; /* Indre marg */
+    }
+
+
+    .ok input{
+
+       width: 50%;
+       gap: -20px; 
+    }
+    .fa-chevron-right {
+        display: none;
+        visibility: hidden;
+    }
+    .fra{
+        margin-left: -50px;
+        margin-right: -20px;
+    }
+
+    .reiselengde {
+        margin-left: -90px;
+    }
+    .date{
+        margin-left: -40px;
+    }
+    .antall{
+        margin-left: -90px;
+    }
+    .sook_knapp{
+        color: #000000;
+        background-color: black;
+    }
+
+    .bestille {
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 154px;  
+
+    }
+ 
+    .banner img{
+        height: 300px;
+        
+    }
+
+
     
 
-   
-  
-   .kampanjeseksjon {
-    padding: 30px;
-    position: relative;
-    margin: auto;
-    max-width: 1200px;
-    overflow: hidden;
-    top: -200px;
-    max-height: 120%;
-    padding-left: 125px;
-    padding-right: 125px;
 
-}
 
-.kampanje_info {
-    position: absolute;
-    top: 0%;
-    right: 9%; /* Flytter boksen til høyre */
-    background-color: rgb(0, 173, 236);
-    color: rgb(0, 0, 0);
-    padding: 20px;
-    border-radius: 10px; /* Runde hjørner på boksen */
-    max-width: 300px;
-    height: 200px;
-    text-align: center; /* Sentraliserer tekst inni boksen */
-    
-}
 
-.kampanje_info h2 {
-    font-size: 22px;
-    margin-bottom: 10px;
-}
-
-.kampanje_info p {
-    font-size: 16px;
-    margin-bottom: 5px;
-}
-
-.kampanje_info button {
-    background-color: #ffc107; /* Gul farge på knappen */
-    color: black;
-    font-size: 16px;
-    border: none;
-    border-radius: 5px; /* Runde hjørner på knappen */
-    padding: 10px 20px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-}
-
-.kampanje_info button:hover {
-    background-color: #e0a800; /* Mørkere gul ved hover */
-}
 
     
+    
+
+
+
+    
+
+    
+    
+    .kampanjeseksjon {
+        padding: 30px;
+        position: relative;
+        margin: auto;
+        max-width: 1200px;
+        overflow: hidden;
+        top: -200px;
+        max-height: 120%;
+        padding-left: 125px;
+        padding-right: 125px;
+
+    }
+
+    .kampanje_info {
+        position: absolute;
+        top: 0%;
+        right: 9%; /* Flytter boksen til høyre */
+        background-color: rgb(0, 173, 236);
+        color: rgb(0, 0, 0);
+    
+    /* Runde hjørner på boksen */
+        max-width: 300px;
+        height: 200px;
+        text-align: center; /* Sentraliserer tekst inni boksen */
+        
+    }
+
+    .kampanje_info h2 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+
+    .kampanje_info p {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .kampanje_info button {
+        background-color: #ffc107; /* Gul farge på knappen */
+        color: black;
+        font-size: 16px;
+        border: none;
+        border-radius: 5px; /* Runde hjørner på knappen */
+        padding: 10px 20px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+
+
+
+
+
+
+
+
 
 
 
