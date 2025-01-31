@@ -859,6 +859,7 @@ nav a.active::after {
 }
 .rom_kort li {
     padding: 0; 
+    list-style: none; 
     margin-bottom: 10px;
     font-size: 14px; 
     color: #555; 
@@ -879,7 +880,7 @@ nav a.active::after {
 .rom_all_info {
     padding: 20px;
 }
-#score {
+.score {
     background-color: #6ddf6d; 
     color: #fff; 
     padding: 5px 10px; 
@@ -891,10 +892,6 @@ nav a.active::after {
     color: #000; 
     font-weight: bold;
 }
-
-
-
-
 .velg_rom {
     position: sticky;
     bottom: 0; 
@@ -912,11 +909,6 @@ nav a.active::after {
     justify-content: space-between;
     -index: 1000; 
 }
-
-
-
-
-
 .velg_rom {
     margin: 0px;
     border: 1px solid #ccc; 
@@ -1518,9 +1510,6 @@ details summary {
     .fasiliteter {
         margin-top: -100px;
     }
-    
-   
-    
     .kart {
         flex: 1; 
         width: 100%;
@@ -1533,9 +1522,6 @@ details summary {
         transform: translateY(-220px); /* Flytter kartet 20px opp */
 
     }    
-    
-
-
     .rom_valg {
         max-width: 1132px;
         margin: 0 auto;
@@ -1568,58 +1554,83 @@ details summary {
     .velg_rom {
         position: sticky;
         max-width: 1090px;
-        margin: 20px auto;
+
         border-radius: 10px;
         box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
         background-color: white;
         z-index: 10; 
     }
-    
-
-
     .nav_hotell  {
         margin-left: -30px;
     }
-
-
-
-
-
-
     summary {
         display: none;
     }
-    .dine_valg{
+    .dine_valg {
         display: contents;
-    }
+    }   
     .dine_valg_ {
-        display: block; /* Gjør seksjonen synlig */
+        display: block; 
         height: 650px;
-        margin-right: 0px;
+        grid-column: 2; 
+        margin-left: -5px;
     }
-
-
-    .bestille_desktopSplit{
-        
+    
+    .bestillingsopplysninger {
+        grid-column: 1; 
+        margin-top: -750px;
+        display: block; 
+        margin-right: -5px;
+        align-items: center;
+    }
+    .bestille_desktopSplit {
         box-sizing: border-box; 
-        padding: 20px;
-        margin: 15px;
+        display: grid; 
+        grid-template-columns: 1fr 1fr;
+        padding-right: 200px;    
+        justify-items: right;
+        justify-content: space-around;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 10px;  
+        width: 100%; 
+    }
+    .bestille_desktopSplit {
+        box-sizing: border-box; 
         display: grid; 
         grid-template-columns: 1fr 1fr; 
-        gap: 0px; 
-        width: 100%; 
-        align-items: stretch; 
-        object-fit: cover;
-        justify-items: self-start;
-
+        gap: 20px; 
+        
+        width: calc(100% - 80px); 
+        max-width: 1200px; 
+        
+        margin: 0 auto; 
+        padding: 10px 40px;
+        
+        align-items: center; 
+        justify-content: center;
     }
-    /* Sikrer at begge seksjoner tar opp lik plass */
+    
     .dine_valg_,
     .bestillingsopplysninger {
         width: 70%;
     }
-    
 
+
+    .navigasjon_order {
+        margin: 0 auto; 
+        justify-content: center; 
+        width: calc(55%); 
+        max-width: 1200px;
+        
+    }
+    .navigasjon_order p{
+        font-size: 10px;
+
+    }
+    
+    
+    
     
 
 

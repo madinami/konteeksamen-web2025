@@ -42,8 +42,8 @@
                             <a href="../nettsidene/hotell.html"><i class="fa-solid fa-hotel"></i> Hotell</a>
                             <a href="https://www.norwegian.no" target="_blank"><i class="fa-solid fa-plane"></i> Fly</a>
                             <a href="#kontakt_footer"><i class="fa-solid fa-mobile"></i> kontakt oss</a>
-                            <i class="fa-solid fa-city"></i> Storby</a>
-                            <i class="fa-solid fa-map"></i> Kombinasjoner</a>
+                            <i class="fa-solid fa-city"></i> Storby
+                            <i class="fa-solid fa-map"></i> Kombinasjoner
                         </nav>
                         <section class="index_pil">
                             <i class="fa-solid fa-chevron-right"></i>
@@ -54,7 +54,7 @@
         <section class="ok">
                 <form  class="utfyllinsskjema">
                     <label for="fra">Fra</label>
-                    <select class="fra" name="fra">
+                    <select class="fra" id="fra" name="fra">
                         <option value="oslo-lufthavn">Oslo Lufthavn</option>
                         <option value="torp-lufthavn">Torp Lufthavn</option>
                         <option value="Bergen-lufthavn">Bergen Lufthavn</option>
@@ -62,7 +62,7 @@
                     </select>
 
                     <label for="til">Til</label>
-                    <select class="til" name="til">
+                    <select class="til" id="til" name="til">
                         <option value="albania">Albania</option>
                         <option value="danmark">Danmark</option>
                         <option value="finland">Finland</option>
@@ -71,7 +71,7 @@
 
                     <label for="reiselengd">Reiselengde</label>
                     <section class="reis">
-                        <select class="reiselengde" name="reiselengde">
+                        <select class="reiselengde" id="reiselengd" name="reiselengde">
                             <option value="mindre-en-uke">Mindre enn 1 uke</option>
                             <option value="1-uker">1 uke</option>
                             <option value="2-uker">2 uker</option>
@@ -79,31 +79,31 @@
                         </select>
                         
                         <label for="dato">Dato</label>
-                        <input type="date" class="date" name="date">
+                        <input type="date" id="dato" class="date" name="date">
                     </section>
 
                     <label for="antall">Antall reisende</label>
-                    <input type="number" class="antall" name="antall" min="1" value="1">
+                    <input type="number" id="antall" class="antall" name="antall" min="1" value="1">
 
                     <label for="sook">.</label>
-                    <button class="sook_knapp" type="sook_knapp">Søk</button>
+                 <button class="sook_knapp" id="sook" type="submit">Søk</button>
                 </form>
             
             </section>
         </section>
         </section>
     </header>
-</body>
-<main class="main_index">
+
     <section class="kampanjeseksjon">
         <img src="../bilder/landskap/bassengstrand.jpg" alt="bilde2">
-        <section class="kampanje_info">
+        
+        <div class="kampanje_info">  <!-- Endret <section> til <div> -->
             <h2>Bestill sommerens beste uke</h2>
             <p>Fly + hotell, 7 dager</p>
             <strong>Fra 3 298,-</strong>
-        </section> 
+        </div>
+
         <a class="bestill_btn" href="../nettsidene/hotell.html">Bestill i dag</a>
-        </button>
     </section>
 
     <section class="tilbudsseksjon">
@@ -124,73 +124,70 @@
 
     
 
-    <section class="tips" id="tips">
-        <h2>Tips & inspirasjon</h2>
-        <section class="tips_oppsettet">
-            <article>
-                <section class="tips_ukens_deal">
-                    <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
-                        <section class="tips_info">
-                            <h5>Greske favoritter</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
-                        </section>
-                        <a href="../nettsidene/hotell.html" class="tips_i">Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></a>
-                    <p class="ukens_deal">Ukens Deal</p>   
+<section class="tips" id="tips">
+    <h2>Tips & inspirasjon</h2>
+    <section class="tips_oppsettet">
+        <article>
+            <section class="tips_ukens_deal">
+                <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
+                    <section class="tips_info">
+                        <h5>Greske favoritter</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
+                    </section>
+                    <a href="../nettsidene/hotell.html" class="tips_i">Fra kr 3 970 <i class="fa-solid fa-arrow-right"></i></a>
+                <p class="ukens_deal">Ukens Deal</p>   
+            </section>
+        </article>
+
+        <article>
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
+                <section class="tips_info">
+                    <h5>Bestill i dag!</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
                 </section>
-            </article>
+            <a href="../nettsidene/hotell.html" class="tips_i">Fra kr 3 270 <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
 
-            <article>
-                <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
-                    <section class="tips_info">
-                        <h5>Bestill i dag!</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
-                    </section>
-                <a href="../nettsidene/hotell.html" class="tips_i">Fra kr 3 270 <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
-                    <section class="tips_info">
-                        <h5>Ferie</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
-                    </section>
-                <a href="../nettsidene/hotell.html" class="tips_i">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
-                    <section class="tips_info">
-                        <h5>Skiferie</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
-                    </section>
-                <a href="../nettsidene/hotell.html" class="tips_i">Se alle ski områdene <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-
-            <article>
-                <section class="tips_ukens_nyhet">
-                    <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
-                        <section class="tips_info">
-                            <h5>Besøk London</h5>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>     
-                        </section>
-                    <a href="../nettsidene/hotell.html" class="tips_i">Fra 3000 kr <i class="fa-solid fa-arrow-right"></i></a>
-                    <p class="ukens_nyhet">Nyhet</p>
+        <article>
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
+                <section class="tips_info">
+                    <h5>Ferie</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
                 </section>
-            </article>
+            <a href="../nettsidene/hotell.html" class="tips_i">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
 
-            <article>
+        <article>
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
+                <section class="tips_info">
+                    <h5>Skiferie</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
+                </section>
+            <a href="../nettsidene/hotell.html" class="tips_i">Se alle ski områdene <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
+
+        <article>
+            <section class="tips_ukens_nyhet">
                 <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
                     <section class="tips_info">
-                        <h5>Spar opp til 1000Kr</h5>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
+                        <h5>Besøk London</h5>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>     
                     </section>
-                <a href="../nettsidene/hotell.html" class="tips_i">Les mer <i class="fa-solid fa-arrow-right"></i></a>
-            </article>
-        </section>
+                <a href="../nettsidene/hotell.html" class="tips_i">Fra 3000 kr <i class="fa-solid fa-arrow-right"></i></a>
+                <p class="ukens_nyhet">Nyhet</p>
+            </section>
+        </article>
+
+        <article>
+            <img src="../bilder/landskap/utsikt.jpg" alt="bilde3">
+                <section class="tips_info">
+                    <h5>Spar opp til 1000Kr</h5>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the indust</p>
+                </section>
+            <a href="../nettsidene/hotell.html" class="tips_i">Les mer <i class="fa-solid fa-arrow-right"></i></a>
+        </article>
     </section>
-</main>
-
-
+</section>
 
 
 <footer>
@@ -219,7 +216,7 @@
             <section class="nyhetstilbud_input">
                 <h5>Meld deg på nyhetsbrev her</h5>
                 <section class="nyhestilbud_input_knapp">
-                    <input type="registration" placeholder="travel@gmail.com" id="registration">
+                    <input id="registration">
                     <button type="submit" class="search-btn">Send</button>
                 </section>
             </section>
@@ -250,6 +247,8 @@
     </section>
 </footer>
 </body>
+
+
 </html>
 
 

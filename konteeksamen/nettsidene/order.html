@@ -1,8 +1,10 @@
-<link rel="stylesheet" href="../css/style.css">
-<link rel="stylesheet" href="../ikoner/css/brands.css">
-<link rel="stylesheet" href="../ikoner/css/solid.css">
-<link rel="stylesheet" href="../ikoner/css/all.css">
-<title>Bestillingsside</title>
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../ikoner/css/brands.css">
+    <link rel="stylesheet" href="../ikoner/css/solid.css">
+    <link rel="stylesheet" href="../ikoner/css/all.css">
+    <title>Bestillingsside</title>
 </head>
 <body>
 <header id="global_header">
@@ -19,9 +21,7 @@
         </section>
     </section>
 
-    
-  
-<body>
+
     <nav class="navigasjon_order">
         <a href="../nettsidene/index.html#utfyllinsskjema">Søk</a><p><i class="fa-solid fa-chevron-right"></i></p>
         <a href="../nettsidene/hotell.html">Søkeresultater</a><p><i class="fa-solid fa-chevron-right"></i></p>
@@ -63,7 +63,7 @@
             </section>
         </details>
     </section>
-
+</header>
 <main class="bestille_desktopSplit">
         <section class="dine_valg_">
             <section class="hotell_inlegget_">
@@ -93,17 +93,17 @@
             </section>
         </section>
     
-
         <section class="bestillingsopplysninger">
             <h2>Oppgi dine bestillingsopplysninger</h2>
             <section class="bestillingsskjema1">
                 <form>
                     <h5>VOKSEN 18+ HOVEDBESTILLER</h5>
                     <section class="info_order_person">
-                    <label>FORNAVN (IFØLGE PASS):</label>
-                        <input type="name" id="name" class="inputfeltene">
-                    <label>ETTERNAVN (IFØLGE PASS):</label>
-                        <input type="name" id="name" class="inputfeltene">
+                        <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="fornavn" class="inputfeltene">
+                        <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                        <input type="text" id="etternavn" class="inputfeltene">
+
                     <label class="bursdag">FØDSELSDATO:</label>
                         <section class="bursdagsdato_opsett">
                             <input type="number" class="day" name="day" placeholder="DD" min="1" max="31" required>
@@ -111,15 +111,16 @@
                             <input type="number" class="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
                         </section>
                     <label>KJØNN:</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                        <label class="female">Kvinne</label>
-                    <input type="radio" id="male" name="gender" value="male" checked>
-                        <label class="male">Mann</label>
+                    <input type="radio" id="female1" name="gender1" value="female">
+                    <label for="female1" class="female">Kvinne</label>
+                    <input type="radio" id="male1" name="gender1" value="male" checked>
+                    <label for="male1" class="male">Mann</label>
+
                     </section>
-                <section class="leveranseplass">
-                    <label for="email">E-post
-                        <input type="email" name="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$">
-                    </label>
+                    <section class="leveranseplass">
+                        <label for="email">E-post</label>
+                        <input type="email" placeholder="travel@gmail.com" id="registration">
+                    </section>                
                     <label for="tel">Telefon
                         <input type="tel" name="tel" id="tel" minlength="8">
                     </label>
@@ -144,28 +145,30 @@
                     </label>
                 </form>
             </section>
-        </section>
             <form>
                 <section class="bestillingsskjema2">
-                    <form>
-                        <h5>VOKSEN 18+</h5>
-                        <label>FORNAVN (IFØLGE PASS):</label>
-                            <input type="name" id="name" class="inputfeltene">
-                        <label>ETTERNAVN (IFØLGE PASS):</label>
-                            <input type="name" id="name" class="inputfeltene">
-                        <label class="bursdag">FØDSELSDATO:</label>
-                            <section class="bursdagsdato_opsett">
-                                <input type="number" class="day" name="day" placeholder="DD" min="1" max="31" required>
-                                <input type="number" class="month" name="month" placeholder="MM" min="1" max="12" required>
-                                <input type="number" class="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
-                            </section>
-                        <label>KJØNN:</label>
-                        <input type="radio" id="female" name="gender" value="female">
-                            <label class="female">Kvinne</label>
-                        <input type="radio" id="male" name="gender" value="male" checked>
-                            <label class="male">Mann</label>
-                    </form>
-                </section>
+                    <h5>VOKSEN 18+</h5>
+                    <label for="fornavn">FORNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="fornavn2" class="inputfeltene">
+                
+                    <label for="etternavn">ETTERNAVN (IFØLGE PASS):</label>
+                    <input type="text" id="etternavn2" class="inputfeltene">
+                
+                    <label class="bursdag">FØDSELSDATO:</label>
+                    <section class="bursdagsdato_opsett">
+                        <input type="number" class="day" name="day" placeholder="DD" min="1" max="31" required>
+                        <input type="number" class="month" name="month" placeholder="MM" min="1" max="12" required>
+                        <input type="number" class="year" name="year" placeholder="ÅÅÅÅ" min="1900" max="2100" required>
+                    </section>
+                
+                    <label>KJØNN:</label>
+                    <input type="radio" id="female2" name="gender2" value="female">
+                    <label for="female2" class="female">Kvinne</label>
+                    <input type="radio" id="male2" name="gender2" value="male" checked>
+                    <label for="male2" class="male">Mann</label>
+                </section> 
+                
+                </form>                
             <button class="siste_trinn" id="knapp_sisteTrinn" type="button">Siste Trinn <i class="fa-solid fa-arrow-right" aria-hidden="true"></i></button>
         </section>
 </main>
@@ -195,7 +198,8 @@
             <section class="nyhetstilbud_input">
                 <h5>Meld deg på nyhetsbrev her</h5>
                 <section class="nyhestilbud_input_knapp">
-                    <input type="registration" placeholder="travel@gmail.com" id="registration">
+                    <label for="email">E-post</label>
+                    <input type="email" placeholder="travel@gmail.com" id="email">                    
                     <button type="submit" class="search-btn">Send</button>
                 </section>
             </section>
