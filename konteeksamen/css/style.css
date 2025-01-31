@@ -1297,6 +1297,7 @@ details summary {
 
     .bannerbilde img{
         margin-top: -120px;
+        
     }
 
     .main_index {
@@ -1396,9 +1397,13 @@ details summary {
         background-color: rgb(0, 173, 236);
         color: rgb(0, 0, 0);
         max-width: 300px;
-        height: 200px;
+        height: 300px;
         text-align: center;    
     }
+    .bestill_btn{
+        top: 0px; /* Øk verdien for å flytte den lenger ned */
+    }
+    
     .kampanje_info h2 {
         font-size: 22px;
         margin-bottom: 10px;
